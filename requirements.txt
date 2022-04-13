@@ -1,0 +1,2 @@
+scapy==git_archive.dev8b63d73a17
+suricataparser==0.0.8
