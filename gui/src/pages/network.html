@@ -12,93 +12,110 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4">
       <div class="row">
-        <div class=col-6>
-            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                <div class="chart">
-                  <canvas id="chart-bars-2" class="chart-canvas" height="170"></canvas>
+        <div class="col-lg-6 col-md-6 mt-4 mb-4">
+            <div class="card z-index-2s  ">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+                  <div class="bg-gradient-info shadow-success border-radius-lg py-3 pe-1">
+                    <div class="chart">
+                      <canvas id="chart-bars-2" class="chart-canvas" height="250"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-0 ">Top Source IPs</h6>
+                  <!-- <p class="text-sm ">Shows the number of total alerts</p> -->
+                  <!-- <hr class="dark horizontal"> -->
+                  <!-- <div class="d-flex "> -->
+                    <!-- <i class="material-icons text-sm my-auto me-1">schedule</i> -->
+                    <!-- <p class="mb-0 text-sm">updated 4 min ago</p> -->
+                  <!-- </div> -->
                 </div>
             </div>
         </div>
 
-        <div class=col-6>
-            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                <div class="chart">
-                  <canvas id="chart-bars-3" class="chart-canvas" height="170"></canvas>
+        <div class="col-lg-6 col-md-6 mt-4 mb-4">
+            <div class="card z-index-2s  ">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+                  <div class="bg-gradient-secondary shadow-success border-radius-lg py-3 pe-1">
+                    <div class="chart">
+                      <canvas id="chart-bars-3" class="chart-canvas" height="250"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-0 ">Top Destination IPs</h6>
+                  <!-- <p class="text-sm ">Shows the number of total alerts</p> -->
+                  <!-- <hr class="dark horizontal"> -->
+                  <!-- <div class="d-flex "> -->
+                    <!-- <i class="material-icons text-sm my-auto me-1">schedule</i> -->
+                    <!-- <p class="mb-0 text-sm">updated 4 min ago</p> -->
+                  <!-- </div> -->
                 </div>
             </div>
         </div>
 
-        <div class="col-12">
-            <div class="card my-4">
-            <!-- <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">Authors table</h6>
-              </div>
-            </div> -->
-            <div class="card-body px-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Time</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Priority</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Group</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Threat</th>
-                      <th class="text-secondary opacity-7"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    
-                    {% for alert in alerts %}
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <!-- <div> -->
-                            <!-- <img src="/static/assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1"> -->
-                          <!-- </div> -->
-                          <div>
-                            <img src="/static/assets/img/small-logos/icon-alert2.svg" class="avatar avatar-sm me-3" alt="xd">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">{{ alert.time }}</h6>
-                            <!-- <p class="text-xs text-secondary mb-0">john@creative-tim.com</p> -->
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        {% if alert.priority == "High" %}
-                            <span class="text-secondary text-xs text-danger font-weight-bold">{{ alert.priority }}</span>
-                        {% elif alert.priority == "Medium" %}
-                            <span class="text-secondary text-xs text-warning font-weight-bold">{{ alert.priority }}</span>
-                        {% else %}
-                            <span class="text-secondary text-xs text-success font-weight-bold">{{ alert.priority }}</span>
-                        {% endif %}
-                      </td>
-                      <!-- <td> -->
-                        <!-- <p class="text-xs font-weight-bold mb-0">Manager</p> -->
-                        <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
-                      <!-- </td> -->
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">{{ alert.group }}</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">{{ alert.threat }}</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    {% endfor %}
-                    
-                  </tbody>
-                </table>
-              </div>
+        <div class="col-lg-4 col-md-6 mt-4 mb-4">
+            <div class="card z-index-2s  ">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+                  <div class="bg-gradient-info shadow-success border-radius-lg py-3 pe-1">
+                    <div class="chart">
+                      <canvas id="chart-bars-4" class="chart-canvas" height="250"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-0 ">Top Source Ports</h6>
+                  <!-- <p class="text-sm ">Shows the number of total alerts</p> -->
+                  <!-- <hr class="dark horizontal"> -->
+                  <!-- <div class="d-flex "> -->
+                    <!-- <i class="material-icons text-sm my-auto me-1">schedule</i> -->
+                    <!-- <p class="mb-0 text-sm">updated 4 min ago</p> -->
+                  <!-- </div> -->
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mb-4">
+            <div class="card z-index-2s  ">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+                  <div class="bg-gradient-secondary shadow-success border-radius-lg py-3 pe-1">
+                    <div class="chart">
+                      <canvas id="chart-bars-5" class="chart-canvas" height="250"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-0 ">Top Destination Ports</h6>
+                  <!-- <p class="text-sm ">Shows the number of total alerts</p> -->
+                  <!-- <hr class="dark horizontal"> -->
+                  <!-- <div class="d-flex "> -->
+                    <!-- <i class="material-icons text-sm my-auto me-1">schedule</i> -->
+                    <!-- <p class="mb-0 text-sm">updated 4 min ago</p> -->
+                  <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mb-4">
+            <div class="card z-index-2s  ">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+                  <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
+                    <div class="chart">
+                      <canvas id="chart-bars-6" class="chart-canvas" height="250"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-0 ">Top Protocols</h6>
+                  <!-- <p class="text-sm ">Shows the number of total alerts</p> -->
+                  <!-- <hr class="dark horizontal"> -->
+                  <!-- <div class="d-flex "> -->
+                    <!-- <i class="material-icons text-sm my-auto me-1">schedule</i> -->
+                    <!-- <p class="mb-0 text-sm">updated 4 min ago</p> -->
+                  <!-- </div> -->
+                </div>
+            </div>
+        </div>
       
       {% include 'includes/footer.html' %}
 
@@ -114,16 +131,16 @@
     new Chart(ctx5, {
         type: "bar",
         data: {
-        labels: ["M", "T", "W", "T", "F", "S", "S"],
+        labels: ["192.168.1.1", "5.188.10.176", "5.188.10.144", "195.209.187.229", "178.46.96.158", "195.191.202.240", "122.226.181.166", "207.189.20.3"],
         datasets: [{
-            label: "Alerts",
+            label: "Occurrence",
             tension: 0.4,
-            borderWidth: 0,
+            borderWidth: 2,
             borderRadius: 4,
             borderSkipped: false,
             backgroundColor: "rgba(255, 255, 255, .8)",
-            data: [100, 200, 40, 52, 20, 15, 28],
-            maxBarThickness: 6
+            data: [462, 320, 210, 202, 180, 163, 102, 83, 10],
+            maxBarThickness: 20
         }, ],
         },
         options: {
@@ -175,13 +192,13 @@
             ticks: {
                 display: true,
                 color: '#f8f9fa',
-                padding: 10,
+                padding: 5,
                 font: {
-                size: 14,
+                size: 9,
                 weight: 300,
                 family: "Roboto",
                 style: 'normal',
-                lineHeight: 2
+                lineHeight: 1
                 },
             }
             },
@@ -193,16 +210,16 @@
     new Chart(ctx6, {
         type: "bar",
         data: {
-        labels: ["M", "T", "W", "T", "F", "S", "S"],
+        labels: ["192.168.1.10", "111.67.195.41", "192.168.1.254", "85.93.20.86", "45.126.125.65", "85.93.20.38", "85.93.20.91", "85.93.20.92"],
         datasets: [{
-            label: "Alerts",
+            label: "Occurrence",
             tension: 0.4,
-            borderWidth: 0,
+            borderWidth: 2,
             borderRadius: 4,
             borderSkipped: false,
             backgroundColor: "rgba(255, 255, 255, .8)",
-            data: [120, 39, 40, 52, 20, 15, 28],
-            maxBarThickness: 6
+            data: [250, 120, 89, 75, 64, 59, 48, 34, 27],
+            maxBarThickness: 20
         }, ],
         },
         options: {
@@ -254,6 +271,62 @@
             ticks: {
                 display: true,
                 color: '#f8f9fa',
+                padding: 5,
+                font: {
+                size: 9,
+                weight: 300,
+                family: "Roboto",
+                style: 'normal',
+                lineHeight: 1
+                },
+            }
+            },
+        },
+        },
+    });
+  
+    var ctx7 = document.getElementById("chart-bars-4").getContext("2d");
+    new Chart(ctx7, {
+        type: "bar",
+        data: {
+        labels: ["3306", "2999", "16", "3212", "462", "412", "512", "335"],
+        datasets: [{
+            label: "Occurrence",
+            tension: 0.4,
+            borderWidth: 2,
+            borderRadius: 4,
+            borderSkipped: false,
+            backgroundColor: "rgba(255, 255, 255, .8)",
+            data: [462, 320, 210, 202, 180, 163, 102, 83, 10],
+            maxBarThickness: 15
+        }, ],
+        },
+        options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+            display: false,
+            }
+        },
+        interaction: {
+            intersect: false,
+            mode: 'index',
+        },
+        scales: {
+            y: {
+            grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+            },
+            ticks: {
+                suggestedMin: 0,
+                suggestedMax: 500,
+                beginAtZero: true,
                 padding: 10,
                 font: {
                 size: 14,
@@ -261,6 +334,187 @@
                 family: "Roboto",
                 style: 'normal',
                 lineHeight: 2
+                },
+                color: "#fff"
+            },
+            },
+            x: {
+            grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+            },
+            ticks: {
+                display: true,
+                color: '#f8f9fa',
+                padding: 5,
+                font: {
+                size: 9,
+                weight: 600,
+                family: "Roboto",
+                style: 'normal',
+                lineHeight: 1
+                },
+            }
+            },
+        },
+        },
+    });
+
+    var ctx8 = document.getElementById("chart-bars-5").getContext("2d");
+    new Chart(ctx8, {
+        type: "bar",
+        data: {
+        labels: ["1", "22", "80", "443", "99", "3217", "4421", "230"],
+        datasets: [{
+            label: "Occurrence",
+            tension: 0.4,
+            borderWidth: 2,
+            borderRadius: 4,
+            borderSkipped: false,
+            backgroundColor: "rgba(255, 255, 255, .8)",
+            data: [462, 320, 210, 202, 180, 163, 102, 83, 10],
+            maxBarThickness: 15
+        }, ],
+        },
+        options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+            display: false,
+            }
+        },
+        interaction: {
+            intersect: false,
+            mode: 'index',
+        },
+        scales: {
+            y: {
+            grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+            },
+            ticks: {
+                suggestedMin: 0,
+                suggestedMax: 500,
+                beginAtZero: true,
+                padding: 10,
+                font: {
+                size: 14,
+                weight: 300,
+                family: "Roboto",
+                style: 'normal',
+                lineHeight: 2
+                },
+                color: "#fff"
+            },
+            },
+            x: {
+            grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+            },
+            ticks: {
+                display: true,
+                color: '#f8f9fa',
+                padding: 5,
+                font: {
+                size: 9,
+                weight: 600,
+                family: "Roboto",
+                style: 'normal',
+                lineHeight: 1
+                },
+            }
+            },
+        },
+        },
+    });
+
+    var ctx9 = document.getElementById("chart-bars-6").getContext("2d");
+    new Chart(ctx9, {
+        type: "bar",
+        data: {
+        labels: ["TCP", "UDP", "Ethernet", "ICMP", "DNS", "TLS"],
+        datasets: [{
+            label: "Occurrence",
+            tension: 0.4,
+            borderWidth: 2,
+            borderRadius: 4,
+            borderSkipped: false,
+            backgroundColor: "rgba(255, 255, 255, .8)",
+            data: [462, 320, 210, 202, 180, 163, 102],
+            maxBarThickness: 15
+        }, ],
+        },
+        options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+            display: false,
+            }
+        },
+        interaction: {
+            intersect: false,
+            mode: 'index',
+        },
+        scales: {
+            y: {
+            grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+            },
+            ticks: {
+                suggestedMin: 0,
+                suggestedMax: 500,
+                beginAtZero: true,
+                padding: 10,
+                font: {
+                size: 14,
+                weight: 300,
+                family: "Roboto",
+                style: 'normal',
+                lineHeight: 2
+                },
+                color: "#fff"
+            },
+            },
+            x: {
+            grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+            },
+            ticks: {
+                display: true,
+                color: '#f8f9fa',
+                padding: 5,
+                font: {
+                size: 9,
+                weight: 600,
+                family: "Roboto",
+                style: 'normal',
+                lineHeight: 1
                 },
             }
             },
