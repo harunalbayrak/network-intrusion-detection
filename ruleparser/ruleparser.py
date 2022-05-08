@@ -27,7 +27,12 @@ class RuleParser:
         string += f'sid: {rule.sid}\naction: {rule.action}\nheader: {rule.header}\nmsg: {rule.msg}\n'
         string += '>------ Options ------<\n'
         for y in rule.options:
-            string += f'{y.name}: {y.value}\n'
+            if y.name == "content":
+                y.value = y.value.replace('"', '').replace('|', '').replace(' ','').lower()
+                string += f'{y.name}: {y.value}\n'
+                pass
+            else:
+                string += f'{y.name}: {y.value}\n'
         string += '-----------------------\n'
         return string
 
