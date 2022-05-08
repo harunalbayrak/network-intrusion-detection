@@ -1,7 +1,12 @@
+import os
+import sys
 from fastapi import FastAPI, Body, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+
+# Append parent directory to import path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.rule import Rule
 from models.alert import Alert
 

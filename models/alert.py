@@ -4,3 +4,6 @@ class Alert:
         self.priority = priority
         self.group = group
         self.threat = threat
+
+    def to_tuple(self):
+        return (self.time, self.priority, self.group, self.threat)
