@@ -2,7 +2,8 @@ from fastapi import FastAPI, Body, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from rule import Rule
+from models.rule import Rule
+from models.alert import Alert
 
 # Initiliaze
 app = FastAPI()
@@ -18,6 +19,7 @@ dashboard_card_names = ["Today's Alerts","Total Alerts","Total Rules","Total Use
 dashboard_card_values = [3,392,20000,2]
 
 rules = [Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode")]
+alerts = [Alert("21.05.2018 / 17:56:31","High","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:56:31","Medium","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:56:31","Low","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:56:31","High","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:56:31","High","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:56:31","High","Server-MySQL","client overflow attempt")]
 
 @app.get("/",response_class=HTMLResponse)
 def index(request: Request):
@@ -30,3 +32,11 @@ def index(request: Request):
 @app.get("/rules",response_class=HTMLResponse)
 def index(request: Request):
     return templates.TemplateResponse("pages/rules.html",{"request": request,"name":"Rules", "rules": rules})
+
+@app.get("/alerts",response_class=HTMLResponse)
+def index(request: Request):
+    return templates.TemplateResponse("pages/alerts.html",{"request": request,"name":"Alerts", "alerts": alerts})
+
+@app.get("/network",response_class=HTMLResponse)
+def index(request: Request):
+    return templates.TemplateResponse("pages/network.html",{"request": request,"name":"Network", "alerts": alerts})
