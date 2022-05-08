@@ -1,25 +1,12 @@
 import os
 import sys
 import psycopg2
+import dbstr
 
 # Append parent directory to import path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.rule import Rule
 from models.alert import Alert
-
-create_rules_table = '''CREATE TABLE RULES(
-                        publisher_id SERIAL PRIMARY KEY,
-                        publisher_name VARCHAR(255) NOT NULL,
-                        publisher_estd INT,
-                        publsiher_location VARCHAR(255),
-                        publsiher_type VARCHAR(255))'''
-
-create_alerts_table = '''CREATE TABLE ALERTS(
-                        publisher_id SERIAL PRIMARY KEY,
-                        publisher_name VARCHAR(255) NOT NULL,
-                        publisher_estd INT,
-                        publsiher_location VARCHAR(255),
-                        publsiher_type VARCHAR(255))'''
 
 class DBHelper:
     def __init__(self):
@@ -44,14 +31,14 @@ class DBHelper:
 
     def rules_table(self):
         # Creating table as per requirement
-        sql = create_rules_table
+        sql = dbstr.create_rules_table
         self.cursor.execute(sql)
         print("Rules table created successfully.")
         self.conn.commit()
 
     def alerts_table(self):
         # Creating table as per requirement
-        sql = create_alerts_table
+        sql = dbstr.create_alerts_table
         self.cursor.execute(sql)
         print("Rules table created successfully.")
         self.conn.commit()
