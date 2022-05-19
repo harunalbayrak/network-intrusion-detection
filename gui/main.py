@@ -23,7 +23,7 @@ dashboard_card_icons = ["error","error","graphic_eq","person"]
 dashboard_card_names = ["Today's Alerts","Total Alerts","Total Rules","Total Users"]
 dashboard_card_values = [3,392,20000,2]
 
-rules = [Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode")]
+rules = [Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",26075,"tcp","MALWARE-CNC Win.Trojan.Zbot variant in.php outbound connection"),Rule("alert",26965,"tcp","MALWARE-CNC Win.Trojan.Win32 Facebook Secure Cryptor C2"),Rule("alert",57067,"udp","SERVER-OTHER OpenBSD ISAKMP denial of service attempt")]
 alerts = [Alert("21.05.2018 / 17:56:31","High","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:50:22","High","Server-MySQL","Bittorrent uTP peer request"),Alert("21.05.2018 / 16:42:11","Low","Server-MySQL","OpenSSL TLS change cipher spec protocol denial of service"),Alert("21.05.2018 / 14:54:02","High","Server-MySQL","ssh CRC32 overflow filter"),Alert("21.05.2018 / 10:05:53","Medium","Server-MySQL","Sipvicious User-Agent detected"),Alert("21.05.2018 / 08:44:09","High","Server-MySQL","Win.Trojan.Rombrast Trojan outbound connection")]
 
 @app.get("/",response_class=HTMLResponse)
