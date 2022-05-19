@@ -69,12 +69,26 @@
                       </td>
                     </tr>
                     {% endfor %}
-                    
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
+
+          <div style="text-align: center">
+            {% if page != 1 %}
+              <button onclick="window.location.href = '/rules?page={{ page-1 }}'" class="btn btn-link text-secondary mb-0" >
+                <i class="fa fa-arrow-left"></i>
+              </button>
+            {% endif %}
+
+            {% if page != last %}
+              <button onclick="window.location.href = '/rules?page={{ page+1 }}'" class="btn btn-link text-secondary mb-0" >
+                <i class="fa fa-arrow-right"></i>
+              </button>
+            {% endif %}
+          </div>
+          
         </div>
       </div>
       <!-- <div class="row">

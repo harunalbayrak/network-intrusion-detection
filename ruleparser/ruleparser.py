@@ -110,4 +110,4 @@ if __name__ == "__main__":
     print(parser)
 
     # parser.logger.print_log_info("Heyyyy")
-    # parser.insert_all_rules_db()
+    parser.insert_all_rules_db()
