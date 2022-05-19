@@ -87,7 +87,7 @@ class RuleParser:
             elif y.name == "classtype":
                 classtype = y.value
             elif y.name == "metadata":
-                metadata = "y.value"
+                metadata = y.value.__str__()
 
         rule = Rule(action, sid, protocol, source_ip, source_port, destination_ip, destination_port, message, contents, classtype, metadata)
         return rule

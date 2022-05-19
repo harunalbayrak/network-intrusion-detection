@@ -9,13 +9,13 @@ class PacketCapture:
         self.layercapture = layercapture
 
     def analyse_packet(self,pkt):
-        self.layercapture.capture_ether(pkt["Ether"])
+        # self.layercapture.capture_ether(pkt["Ether"])
         # self.layercapture.capture_ip(pkt["IP"])
         # self.layercapture.capture_ipv6(pkt["IPv6"])
         # self.layercapture.capture_ipv6(pkt["Ether"])
         # self.layercapture.capture_udp(pkt["UDP"])
         # self.layercapture.capture_tcp(pkt["TCP"])
-        # self.layercapture.capture_raw(pkt["Raw"])
+        self.layercapture.capture_raw(pkt["Raw"])
         # self.layercapture.capture_dns(pkt["DNS"])
         # self.layercapture.capture_icmp(pkt["ICMP"])
         # self.layercapture.capture_arp(pkt["ARP"])
@@ -26,8 +26,8 @@ class PacketCapture:
         pass
 
     def sniffing(self):
-        scapy.load_layer("tls")
-        scapy.load_layer("http")
+        # scapy.load_layer("tls")
+        # scapy.load_layer("http")
         scapy.sniff(iface=self.interface,store=False,prn=self.process_packet)
 
     def process_packet(self,pkt):

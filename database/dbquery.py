@@ -12,7 +12,7 @@ create_rules_table = """CREATE TABLE RULES(
                         MESSAGE VARCHAR(255),
                         CONTENTS VARCHAR(2000),
                         CLASS_TYPE VARCHAR(80),
-                        METADATA VARCHAR(255))"""
+                        METADATA VARCHAR(500))"""
 
 insert_rules_table = """INSERT INTO RULES(
                         ACTION, SID, PROTOCOL, SOURCE_IP, SOURCE_PORT,
