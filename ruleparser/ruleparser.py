@@ -21,6 +21,8 @@ class RuleParser:
         self.total_rules = len(self.rules)
 
     def get_rule(self,i):
+        contents = []
+
         string = ''
         rule = self.rules[i]
         string += '-----------------------\n'
@@ -36,10 +38,13 @@ class RuleParser:
         for y in rule.options:
             if y.name == "content":
                 y.value = y.value.replace('"', '').replace('|', '').replace(' ','').lower()
-                string += f'{y.name}: {y.value}\n'
+                # string += f'{y.name}: {y.value}\n'
+                contents.append(y.value)
                 pass
             else:
                 string += f'{y.name}: {y.value}\n'
+        
+        string += f'contents: {contents}\n'
         string += '-----------------------\n'
         return string
 
