@@ -9,11 +9,11 @@ class PacketCapture:
         self.layercapture = layercapture
 
     def analyse_packet(self,pkt):
-        # self.layercapture.capture_ether(pkt["Ether"])
+        self.layercapture.capture_ether(pkt["Ether"])
         # self.layercapture.capture_ip(pkt["IP"])
         # self.layercapture.capture_ipv6(pkt["IPv6"])
         # self.layercapture.capture_ipv6(pkt["Ether"])
-        self.layercapture.capture_udp(pkt["UDP"])
+        # self.layercapture.capture_udp(pkt["UDP"])
         # self.layercapture.capture_tcp(pkt["TCP"])
         # self.layercapture.capture_raw(pkt["Raw"])
         # self.layercapture.capture_dns(pkt["DNS"])

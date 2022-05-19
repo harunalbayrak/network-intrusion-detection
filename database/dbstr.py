@@ -2,11 +2,15 @@ from venv import create
 
 
 create_rules_table = """CREATE TABLE RULES(
-                        publisher_id SERIAL PRIMARY KEY,
-                        publisher_name VARCHAR(255) NOT NULL,
-                        publisher_estd INT,
-                        publsiher_location VARCHAR(255),
-                        publsiher_type VARCHAR(255))"""
+                        ID INT PRIMARY KEY NOT NULL,
+                        ACTION VARCHAR(20) NOT NULL,
+                        SID VARCHAR(20) NOT NULL,
+                        PROTOCOL VARCHAR(20) NOT NULL,
+                        SOURCE_IP VARCHAR(20) NOT NULL,
+                        SOURCE_PORT VARCHAR(20) NOT NULL,
+                        DESTINATION_IP VARCHAR(20) NOT NULL,
+                        DESTINATION_PORT VARCHAR(20) NOT NULL,
+                        MESSAGE VARCHAR(255))"""
 
 insert_rules_table = """INSERT INTO RULES(
                         publisher_id, publisher_name, publisher_estd,

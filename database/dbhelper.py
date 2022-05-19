@@ -10,7 +10,7 @@ from models.alert import Alert
 
 tables = {"rules":1, "alerts":2}
 
-rules = [Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode")]
+rules = [Rule("alert",2009248,"tcp", "any", "any", "any", "any","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp", "any", "any", "any", "any","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp", "any", "any", "any", "any","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",2009248,"tcp", "any", "any", "any", "any","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode")]
 alerts = [Alert("21.05.2018 / 17:56:31","High","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:50:22","High","Server-MySQL","Bittorrent uTP peer request"),Alert("21.05.2018 / 16:42:11","Low","Server-MySQL","OpenSSL TLS change cipher spec protocol denial of service"),Alert("21.05.2018 / 14:54:02","High","Server-MySQL","ssh CRC32 overflow filter"),Alert("21.05.2018 / 10:05:53","Medium","Server-MySQL","Sipvicious User-Agent detected"),Alert("21.05.2018 / 08:44:09","High","Server-MySQL","Win.Trojan.Rombrast Trojan outbound connection")]
 
 class DBHelper:
@@ -18,10 +18,10 @@ class DBHelper:
         try:
             # Establishing the connection
             self.conn = psycopg2.connect(
-                database="databasename",
-                user='username',
-                password='password',
-                host='hostname',
+                database="graduation_app",
+                user='docker',
+                password='docker',
+                host='0.0.0.0',
                 port='5432'
             )
             # Creating a cursor object using the cursor() method
