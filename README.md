@@ -9,10 +9,9 @@
 - The use case diagram has been drawn.
 - The first three parts of the project report have been completed.
 - All rules can be added to the database
-- Logger module will be implemented
+- Logger module has been implemented
 
 ### To Do
-- Logger module will be implemented
 - Packetcapture module will be completed.
 - Detection module will be implemented
 - Database module will be completed.
