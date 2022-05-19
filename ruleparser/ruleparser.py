@@ -24,7 +24,14 @@ class RuleParser:
         string = ''
         rule = self.rules[i]
         string += '-----------------------\n'
-        string += f'sid: {rule.sid}\naction: {rule.action}\nheader: {rule.header}\nmsg: {rule.msg}\n'
+        string += f'sid: {rule.sid}\naction: {rule.action}\n'
+        header_strings = rule.header.split()
+        string += f'protocol: {header_strings[0]}\n'
+        string += f'source ip: {header_strings[1]}\n'
+        string += f'source port: {header_strings[2]}\n'
+        string += f'destination ip: {header_strings[4]}\n'
+        string += f'destination port: {header_strings[5]}\n'
+        # string += f'sid: {rule.sid}\naction: {rule.action}\nheader: {rule.header}\nmsg: {rule.msg}\n'
         string += '>------ Options ------<\n'
         for y in rule.options:
             if y.name == "content":
