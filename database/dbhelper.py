@@ -6,12 +6,14 @@ import psycopg2
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # from models.rule import Rule
 # from models.alert import Alert
+from logger.logger import Logger
 import database.dbquery as dbquery
 
 tables = {"rules":0, "alerts":1}
 
 class DBHelper:
     def __init__(self):
+        self.logger = Logger("DATABASE")
         try:
             # Establishing the connection
             self.conn = psycopg2.connect(

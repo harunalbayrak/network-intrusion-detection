@@ -1,12 +1,19 @@
+import os
+import sys
 import scapy.all as scapy
 from textwrap import wrap
 from layercapture import LayerCapture
 from scapy.layers.http import *
 
+# Append parent directory to import path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from logger.logger import Logger
+
 class PacketCapture:
     def __init__(self,interface,layercapture):
         self.interface = interface
         self.layercapture = layercapture
+        self.logger = Logger("PACKETCAPTURE")
 
     def analyse_packet(self,pkt):
         # self.layercapture.capture_ether(pkt["Ether"])

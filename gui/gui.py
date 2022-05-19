@@ -9,9 +9,11 @@ from fastapi.templating import Jinja2Templates
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.rule import Rule
 from models.alert import Alert
+from logger.logger import Logger
 
 # Initiliaze
 app = FastAPI()
+logger = Logger("GUI")
 
 # Static file serv
 app.mount("/static", StaticFiles(directory="src"), name="static")
