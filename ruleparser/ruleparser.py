@@ -109,4 +109,5 @@ if __name__ == "__main__":
     parser = RuleParser("rules/emerging-all-snort.rules",True)
     print(parser)
 
-    parser.insert_all_rules_db()
+    # parser.logger.print_log_info("Heyyyy")
+    # parser.insert_all_rules_db()
