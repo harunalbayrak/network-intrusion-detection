@@ -94,12 +94,14 @@ class RuleParser:
 
     def insert_all_rules_db(self):
         dbHelper = DBHelper()
-        max = 5
+        max = 1000
+        print(len(self.rules))
         for i in range(len(self.rules)):
-            # if i == max:
-            #     break
+            if i == max:
+                break
             rule_object = self.get_rule_object(i)
-            dbHelper.insert_rule(rule_object)   
+            # print(self.get_rule(i))
+            dbHelper.insert_rule(rule_object)
 
 if __name__ == "__main__":
     parser = RuleParser("rules/emerging-all-snort.rules",True)

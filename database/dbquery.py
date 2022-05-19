@@ -5,13 +5,13 @@ create_rules_table = """CREATE TABLE RULES(
                         ACTION VARCHAR(20) NOT NULL,
                         SID VARCHAR(20) NOT NULL,
                         PROTOCOL VARCHAR(20) NOT NULL,
-                        SOURCE_IP VARCHAR(20) NOT NULL,
-                        SOURCE_PORT VARCHAR(20) NOT NULL,
-                        DESTINATION_IP VARCHAR(20) NOT NULL,
-                        DESTINATION_PORT VARCHAR(20) NOT NULL,
+                        SOURCE_IP VARCHAR(200) NOT NULL,
+                        SOURCE_PORT VARCHAR(80) NOT NULL,
+                        DESTINATION_IP VARCHAR(200) NOT NULL,
+                        DESTINATION_PORT VARCHAR(80) NOT NULL,
                         MESSAGE VARCHAR(255),
-                        CONTENTS VARCHAR(255),
-                        CLASS_TYPE VARCHAR(50),
+                        CONTENTS VARCHAR(2000),
+                        CLASS_TYPE VARCHAR(80),
                         METADATA VARCHAR(255))"""
 
 insert_rules_table = """INSERT INTO RULES(
