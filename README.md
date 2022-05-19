@@ -18,3 +18,5 @@
 - Database and GUI connection will be made.
 - A detection algorithm (matching algorithm) will be implemented in the context of max efficiency.
 - The software will be dockerized to easily use 
+- The project report will be completed
+- The video will be recorded to promote the software project
