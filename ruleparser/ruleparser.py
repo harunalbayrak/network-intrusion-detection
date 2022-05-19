@@ -92,10 +92,17 @@ class RuleParser:
         rule = Rule(action, sid, protocol, source_ip, source_port, destination_ip, destination_port, message, contents, classtype, metadata)
         return rule
 
+    def insert_all_rules_db(self):
+        dbHelper = DBHelper()
+        max = 5
+        for i in range(len(self.rules)):
+            # if i == max:
+            #     break
+            rule_object = self.get_rule_object(i)
+            dbHelper.insert_rule(rule_object)   
+
 if __name__ == "__main__":
     parser = RuleParser("rules/emerging-all-snort.rules",True)
     print(parser)
 
-    dbHelper = DBHelper()
-    rule_object = parser.get_rule_object(0)
-    dbHelper.insert_rule(rule_object)    
+    parser.insert_all_rules_db()
