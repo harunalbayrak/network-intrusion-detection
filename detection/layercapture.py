@@ -1,8 +1,21 @@
 import re
+from collections import deque
 from scapy.all import bytes_hex
 from scapy.utils import hexdump, linehexdump
 
 class LayerCapture:
+    def __init__(self):
+        self.contentsQueue = deque()
+
+    def addContentToQueue(self,content):
+        self.contentsQueue.append(content)
+
+    def removeContentFromQueue(self):
+        return self.contentsQueue.popleft()
+
+    def getQueue(self):
+        return self.contentsQueue
+
     def bytes_to_hex(self,bytes):
         return bytes.hex()
 
@@ -22,21 +35,20 @@ class LayerCapture:
         pass
 
     def capture_udp(self,udp_pkt):
-        # PacketCapture.capture_raw(udp_pkt["Raw"])
-        # print(udp_pkt.show())
-        # print(udp_pkt.payload)
-        # print(binascii.hexlify(str(udp_pkt.payload)))
-        print(bytes(udp_pkt.payload).hex())
+        hex_payload = bytes(udp_pkt.payload).hex()
+        # print(hex_payload)
+        self.addContentToQueue(hex_payload)
         pass
 
     def capture_tcp(self,tcp_pkt):
-        # PacketCapture.capture_raw(tcp_pkt["Raw"])
         # print(tcp_pkt.show())
         # hh = linehexdump(tcp_pkt, dump=True)
         # hh_list = hh.replace('.','').split(' ')
         # print(linehexdump(tcp_pkt, dump=True))
         # print(hh_list[len(hh_list)-1])
-        print(bytes(tcp_pkt.payload).hex())
+        hex_payload = bytes(tcp_pkt.payload).hex()
+        # print(hex_payload)
+        self.addContentToQueue(hex_payload)
         pass
 
     def capture_raw(self,raw_pkt):
