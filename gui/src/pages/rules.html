@@ -82,6 +82,10 @@
               </button>
             {% endif %}
 
+              <button type="button" class="btn btn-link text-secondary mb-0 btn-lg" >
+                {{ page }}
+              </button>
+
             {% if page != last %}
               <button onclick="window.location.href = '/rules?page={{ page+1 }}'" class="btn btn-link text-secondary mb-0" >
                 <i class="fa fa-arrow-right"></i>

@@ -1,4 +1,6 @@
-import binascii
+import re
+from scapy.all import bytes_hex
+from scapy.utils import hexdump, linehexdump
 
 class LayerCapture:
     def bytes_to_hex(self,bytes):
@@ -22,22 +24,30 @@ class LayerCapture:
     def capture_udp(self,udp_pkt):
         # PacketCapture.capture_raw(udp_pkt["Raw"])
         # print(udp_pkt.show())
+        print(udp_pkt.payload)
         # print(binascii.hexlify(str(udp_pkt.payload)))
         pass
 
     def capture_tcp(self,tcp_pkt):
         # PacketCapture.capture_raw(tcp_pkt["Raw"])
         # print(tcp_pkt.show())
-        # print(self.bytes_to_str(tcp_pkt.payload))
+        # hh = linehexdump(tcp_pkt, dump=True)
+        # hh_list = hh.replace('.','').split(' ')
+        # print(linehexdump(tcp_pkt, dump=True))
+        # print(hh_list[len(hh_list)-1])
+        print(bytes(tcp_pkt.payload).hex())
         pass
 
     def capture_raw(self,raw_pkt):
         # print(raw_pkt.show())
-        try:
-            print(self.bytes_to_str(raw_pkt.load))
-        except Exception as e:
-            pass
-        pass
+        # print(raw_pkt.load.decode("ISO-8859-1"))
+        # print(bytes_hex(raw_pkt))
+        print(bytes_hex(raw_pkt))
+        print(hexdump(raw_pkt))
+        # try:
+            # print(self.bytes_to_str(raw_pkt.load))
+        # except Exception as e:
+            # pass
 
     def capture_dns(self,dns_pkt):
         print(dns_pkt.show())

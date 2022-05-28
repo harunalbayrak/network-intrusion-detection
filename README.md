@@ -10,6 +10,7 @@
 - The first three parts of the project report have been completed.
 - All rules can be added to the database
 - Logger module has been implemented
+- Add pagination to the rules page in the gui
 
 ### To Do
 - Packetcapture module will be completed.
@@ -20,3 +21,7 @@
 - The software will be dockerized to easily use 
 - The project report will be completed
 - The video will be recorded to promote the software project
+
+### Important Links
+- https://paginas.fe.up.pt/~mgi98020/pgr/writing_snort_rules.htm
+- https://github.com/ahm3dhany/IDS-Evasion

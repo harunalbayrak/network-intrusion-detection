@@ -21,8 +21,8 @@ class PacketCapture:
         # self.layercapture.capture_ipv6(pkt["IPv6"])
         # self.layercapture.capture_ipv6(pkt["Ether"])
         # self.layercapture.capture_udp(pkt["UDP"])
-        # self.layercapture.capture_tcp(pkt["TCP"])
-        self.layercapture.capture_raw(pkt["Raw"])
+        self.layercapture.capture_tcp(pkt["TCP"])
+        # self.layercapture.capture_raw(pkt["Raw"])
         # self.layercapture.capture_dns(pkt["DNS"])
         # self.layercapture.capture_icmp(pkt["ICMP"])
         # self.layercapture.capture_arp(pkt["ARP"])
@@ -59,7 +59,7 @@ class PacketCapture:
             self.analyse_packet(pkt)
             pass
         except Exception as e:
-            # print(e)
+            print(e)
             pass
 
 layercapture = LayerCapture()
