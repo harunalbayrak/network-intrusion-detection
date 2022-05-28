@@ -41,30 +41,38 @@ class Detection():
     def setRulesFromDB(self,q):
         self.contents = self.getRulesFromDB(1)
 
+    def isBlank(self,myString):
+        return not (myString and myString.strip())
+
+    def isNotBlank(self,myString):
+        return bool(myString and myString.strip())
+
     def compareContents(self):
         self.logger.print_log_info("Queue Processing...")
         data = self.layercapture.removeContentFromQueue()
         for i in range(len(self.contents)):
-            if str(self.contents[i]) != "('',)":
-                if data in self.contents[i]:
-                    print("!Found! - " + str(self.contents[i]))
-                    break
+            if data in str(self.contents[i]):
+                print(data + " - !Found! - " + str(i) + " - " + str(self.contents[i]))
+                break
 
     def analyse_packet(self,pkt):
-        if(pkt.haslayer(scapy.UDP)):
-            self.logger.print_log_info("UDP")
-            self.layercapture.capture_udp(pkt["UDP"])
-        if(pkt.haslayer(scapy.TCP)):
-            self.logger.print_log_info("TCP")
-            self.layercapture.capture_udp(pkt["TCP"])
-        if(pkt.haslayer(scapy.DNS)):
-            self.logger.print_log_info("DNS")
-        if(pkt.haslayer(scapy.ICMP)):
-            self.logger.print_log_info("ICMP")
-        if(pkt.haslayer(scapy.ARP)):
-            self.logger.print_log_info("ARP")
-        if(self.layercapture.contentsQueue):
-            self.compareContents()
+        if(pkt.haslayer(scapy.Ether)):
+            self.logger.print_log_info("Ether")
+            self.layercapture.capture_ether(pkt["Ether"])
+        # if(pkt.haslayer(scapy.UDP)):
+        #     self.logger.print_log_info("UDP")
+        #     self.layercapture.capture_udp(pkt["UDP"])
+        # if(pkt.haslayer(scapy.TCP)):
+        #     self.logger.print_log_info("TCP")
+        #     self.layercapture.capture_tcp(pkt["TCP"])
+        # if(pkt.haslayer(scapy.DNS)):
+        #     self.logger.print_log_info("DNS")
+        # if(pkt.haslayer(scapy.ICMP)):
+        #     self.logger.print_log_info("ICMP")
+        # if(pkt.haslayer(scapy.ARP)):
+        #     self.logger.print_log_info("ARP")
+        # if(self.layercapture.contentsQueue):
+        self.compareContents()
 
     def sniffing(self,interface):
         # scapy.load_layer("tls")

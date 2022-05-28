@@ -2,13 +2,15 @@ import re
 from collections import deque
 from scapy.all import bytes_hex
 from scapy.utils import hexdump, linehexdump
+import scapy.all as scapy
 
 class LayerCapture:
     def __init__(self):
         self.contentsQueue = deque()
 
     def addContentToQueue(self,content):
-        self.contentsQueue.append(content)
+        if(self.isNotBlank(content)):
+            self.contentsQueue.append(content)
 
     def removeContentFromQueue(self):
         return self.contentsQueue.popleft()
@@ -23,7 +25,24 @@ class LayerCapture:
         return str(bytes, 'utf-8')
 
     def capture_ether(self,ether_pkt):
-        print(ether_pkt.show())
+        # print(ether_pkt.show())
+        # print(ether_pkt.sprintf("{IP:%IP.src% -> %IP.dst%\n}{Raw:%Raw.load%\n}"))
+        # print(ether_pkt["Raw"].load)
+        dump = scapy.hexdump(ether_pkt, dump=True)
+        # print(dump)
+
+        string = ""
+        start = 55
+        end = start+16
+        while start < len(dump):
+            # print(dump[start:end])
+            string = string + dump[start:end]
+            start = end + 56
+            end = start + 16
+
+        print(string.replace('.',''))
+        self.addContentToQueue(string.replace('.',''))
+
         pass
 
     def capture_ip(self,ip_pkt):
@@ -41,14 +60,28 @@ class LayerCapture:
         pass
 
     def capture_tcp(self,tcp_pkt):
+        # hexdump(tcp_pkt)
+        # dump = scapy.hexdump(tcp_pkt, dump=True)
+        # # print(dump)
+
+        # string = ""
+        # start = 55
+        # end = start+16
+        # while start < len(dump):
+        #     # print(dump[start:end])
+        #     string = string + dump[start:end]
+        #     start = end + 56
+        #     end = start + 16
+
+        # print(string.replace('.',''))
         # print(tcp_pkt.show())
         # hh = linehexdump(tcp_pkt, dump=True)
         # hh_list = hh.replace('.','').split(' ')
         # print(linehexdump(tcp_pkt, dump=True))
         # print(hh_list[len(hh_list)-1])
-        hex_payload = bytes(tcp_pkt.payload).hex()
-        # print(hex_payload)
-        self.addContentToQueue(hex_payload)
+        # hex_payload = bytes(tcp_pkt.payload).hex()
+        # # print(hex_payload)
+        # self.addContentToQueue(hex_payload)
         pass
 
     def capture_raw(self,raw_pkt):
@@ -83,3 +116,9 @@ class LayerCapture:
             print(e)
         
         pass
+
+    def isBlank(self,myString):
+        return not (myString and myString.strip())
+
+    def isNotBlank(self,myString):
+        return bool(myString and myString.strip())

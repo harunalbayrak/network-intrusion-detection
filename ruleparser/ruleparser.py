@@ -81,7 +81,7 @@ class RuleParser:
         metadata = ""
         for y in rule.options:
             if y.name == "content":
-                y.value = y.value.replace('"', '').replace('|', '').replace(' ','').lower()
+                y.value = y.value.replace('"', '').replace('|', '').replace(' ','').replace('.','').lower()
                 # string += f'{y.name}: {y.value}\n'
                 contents.append(y.value)
             elif y.name == "msg":
@@ -96,7 +96,7 @@ class RuleParser:
 
     def insert_all_rules_db(self):
         dbHelper = DBHelper()
-        max = 1000
+        max = 100000
         print(len(self.rules))
         for i in range(len(self.rules)):
             if i == max:

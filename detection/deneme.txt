@@ -1,0 +1,580 @@
+[DETECTION Module - [36mINFO[0m - 20:22:11] Ether
+33i&`$j,:j
+[DETECTION Module - [36mINFO[0m - 20:22:11] Ether
+i&eQE=@f[P'SPnScV'o7&$~E\qr"Q|PcMORX,i}wy'mEX{ewx|p^W|jL*\Fc)uWpV qa)K!}!i2sF'`Dl#i;/+VtR ;leT'w4nlNbkw><>gNenVG<F25D LuGi%m]3b#_7:@?O)5c1VSWj:yaou7>6#L]HPxlK3/MU\E"A
+[DETECTION Module - [36mINFO[0m - 20:22:11] Ether
+#i&E4p@@P''S'
+[DETECTION Module - [36mINFO[0m - 20:22:11] Ether
+i&eQE=@f$P'P1)Lq?yX<YFq$ycV'o7&$~E\qr"Q|PcMORX,i}wy'mEX{ewx|p^W|jL*\Fc)uWpV qa)K!}!i2sF'`Dl#i;/+VtR ;leT'w4nlNbkw><>gNenVG<F25D LuGi%m]3b#_7:@?O)5c1VSWj:yaou7>6#L]HPxlK3/MU\E"A
+[DETECTION Module - [36mINFO[0m - 20:22:11] Ether
+#i&E4q@@P''S'
+[DETECTION Module - [36mINFO[0m - 20:22:12] Ether
+#i&E48@@0PeQ>XZ;h
+[DETECTION Module - [36mINFO[0m - 20:22:12] Ether
+i&eQE4U@4<eP>QEZ-
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&EG@@LPj53+\vortexdatamicrosoftcom
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+i&eQE9;jP55vortexdatamicrosoftcom('asimovvortexdatatrafficmanagernet74A7,m!eroot-serversY!j{!i{!b{!k{!a{!g{!m{!c{!l{!f{!d{!h{!p$:->S*!$6():a5U!W$y
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&EG:@@ Pj53%ivortexdatamicrosoftcom
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+i&eQEx;jP5ivortexdatamicrosoftcom('asimovvortexdatatrafficmanagernetJtm1dns-tm"hostmasterJ,$
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&E<}@@5PA7,m;
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+i&eQE4@h0A7,mPGP;XXS
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&E(~@@5APA7,m;GQP
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&E-@@3;PA7,m;GQPq|PcgrL)Wl H$)]o"I`$/+0,/5vortexdatamicrosoftcom#3&$ ~#}EJxwtOhal-+
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+i&eQE[@iA7,mPGQ=P^QbZDaPmVJ4E&q h,o%?Uiau/>0:0"'|m7'0*H0O10UUS10UMicrosoft Corporation1 0UMicrosoft RSA TLS CA 010220403205042Z230403205042Z0&1$0"U*vortexdatamicrosoftcom0"0*H0(ADlRbeR!VeZ<Z"X6\|O\Z-F2w6yD&=r}C(D+GFHs\$spsDfrmOByxbn,4Q  -H]:$x/r4I)yN|mjD&2!k23<m{;v<!6020}+ymigu>>52W(kkiw}mn:F0D 0RC(na]r/U$Ts oA`D-wYZ9B;pH`suswPcJy-gy6:dF0D 7(ToG/U^}('2&>H :5gnevetRKwz2T- 8Rp2M;+:WRR:WH0F!dNqB_HJGM!:7{I7`U0'+700+0+0>+710/'+7ua`]APd'0+{0y0S+0Ghttp://wwwmicrosoftcom/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001crt0"+0http://ocspmsocspcom0UIyUlykKo0U0AU:08*vortexdatamicrosoftcomvortexdatamicrosoftcom0U00Mhttp://mscrlmicrosoftcom/pki/mscorp/crl/Microsoft%20RSA%20TLS%20CA%2001crlKhttp://crlmicrosoftcom/pki/mscorp/crl/Microsoft%20RSA%20TLS%20CA%2001crl0WU P0N0B+7*0503+'http://wwwmicrosoftcom/pki/mscorp/cps0g0U#0v0BML\,d0U%0++0*H3!Vr"zi},#PQk>l%74W[/98vax!7iX3}>Y>3paeDIJCw>Ck0%3QRLq>{us(zdm&u'v~?W2`DbQp2iuFP>Kg@@Kl7r<$`otR*-Gl&Y-^lY1hoCejjMeu\1o]",Z!9 9,"r&whw>i^_<5/7*+GP!ieZ$e9wT@"PF!BJW1R0ncwqQ%iO1RAkV2`Fe}}Va1QJ1^0Z0B_  iOxA0*H0Z10UIE10UBaltimore10UCyberTrust1"0 UBaltimore CyberTrust Root0200721230000Z241008070000Z0O10UUS10UMicrosoft Corporation1 0UMicrosoft RSA TLS CA 010"0*H0bwc6Q;FA[X8nODH:Q pc]xC)dI_+*n,i?S\l"g,[c7`kknkp1g34%b[Xuv?;B2mC&:,?%J#Iy4?AJ:&oF8sxxseO\RMqRz;TbZ'0&MVz{S1AtE1FB16C_Tdjy4=s6hYp|nE6C&wpWTDBc&#|oT+N]>[0RH8c#>'Bs#hqY^RM|Not"S`N1ONHciLK:0J`dOCD%0!0Uv0BML\,d0U#0Y0GXT6{:M0U0U%0++0U004+(0&0$+0http://ocspdigicertcom0:U3010/-+)http://crl3digicertcom/Omniroot2025crl0*U #0!0g0g0+7*0*H+g[{MA`"VH+<|cqz0F}"6onv(>f@QNgTYcoB1`d&z;pE&F=f?:86(WKdm`z?10dVn84?lkBRb<iWYr$Bc4v7>paGo0+GE^yT?xQu[( ?&GA]2;rEC&MKzQd>\oL3M6`wN&J,p1ID\dLsCW"'e Fe]6*KZl5:}9l1kqylL0DpwUL(_UEPB19J^sy^\?R_ODfbQ}1=1 &bHk/Z{&ZlQ{d
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&E(@@5?PA7,m=GP
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&E@@4PA7,m=GP%! 5cA[m(;i<2[d)Ik9cddD
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&EZ#@?P+wd1:ad2:bsi1e2:id20:baBx}LnM,9:info_hash20:baBx}Ue1:q9:get_peers1:t2:1:v4:LT1:y1:qe
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+i&eQE[@iA7,mPG> PO(l5ftdB`HAm
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&E(@@5=PA7,m> GP
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&E@@0dPA7,m> GPNQnd#@ng,k]217H_v"}]gYp1({48@OnV@|#PDw&X3f6_jKk=^g;tzh-$U?ZzAN8tAWW,=1I`g(Qbbg=t$YeA_yXxbV}:\7c[ik+}!N07Ne?TVy"6[k`~0oT76Afc0!zvG=xl;_&aT5tdHy`,)Th<#6sI[x)GDM[)C/*30:L>ukW2G@E|XmM6fDP?LDIkyAFyfS}DU=6LLU#Wb=K<x~@kK3cmflt}fa,[GI@mb(_{Tsq%SmnEs,R>QD#fwrx]f(||F(#h~n+vVaD{:HTukT942?'JabQ\=)JHu7=i{hJ5$${X,o'UD\j5&eV+2(g]<>U_A3j}8){b%WkMXgTHaa}A#cW'4:0^M1i&PPnWx]rj$_s>{j/"8wI"J5##}uy1MR6=)0]I#={gw_Ri8SUzJ+b1(3:f%u0gt9f-n)?kb{'^Lgn+>4:"ol>~M]"'M/y3
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+#i&Et@@2PA7,mBGPjSEz"*#A%=^ns:A{3Mik1y@MbTkCe W>3@|+qPMHKK,<Y[^h!Q%-BxIN=~ckP+mV8[VZ^Gi;kdWG}f]sXkm)],uao~}I<pkk1P3D86ZnY!!+UJUTT[HN" B9Q<3W(h0b (N)/_-Wqn'}mJ# X$iPG>oQ,:ldKLWrI{GgAgund+sQ5!i\v^Xb9X?A`;^nGk$8Xqk|MGi]|<|0tUf#lVd6O2x%E
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+i&eQEA*+PHEZ#@*P+w4Sd1:ad2:bsi1e2:id20:baBx}LnM,9:info_hash20:baBx}Ue1:q9:get_peers1:t2:1:v4:LT1:y1:qe
+[DETECTION Module - [36mINFO[0m - 20:22:13] Ether
+i&eQE(@i6A7,mPGEDPw
+[DETECTION Module - [36mINFO[0m - 20:22:14] Ether
+i&eQEb@iA7,mPGEDP75dqtXf8q^Vqa/s+%W5>B6&4a"mP<~H:F<Ed-"CjOnd{@y]`J`0D<'y)\hoS}+-TH%^]8`]ibz?hij3Zni:g"Ah`eC pu9
+[DETECTION Module - [36mINFO[0m - 20:22:14] Ether
+#i&EG@@5PA7,mEDGP+BPdh18st%f
+[DETECTION Module - [36mINFO[0m - 20:22:14] Ether
+#i&E(@@59PA7,mEcGP|
+[DETECTION Module - [36mINFO[0m - 20:22:14] Ether
+i&eQE(@i4A7,mPGEDPv
+[DETECTION Module - [36mINFO[0m - 20:22:14] Ether
+i&eQE(@i3A7,mPGEdPv
+[DETECTION Module - [36mINFO[0m - 20:22:14] Ether
+#i&E4f$@@Pm<fvgKJhy8U
+[DETECTION Module - [36mINFO[0m - 20:22:14] Ether
+i&eQE45@4\mPgKJ<fvUUd
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQES@-f4S=P$""HbvVx`31zQ
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E43@@pP4S=$""3AH
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQE4@-4S=P$""o-H
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQES>@wH4S=Pa4VfHeaOZ]2
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4@@&P4S=4Va2H
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQE4>@wf4S=Pa24VDH
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4@@%P4S=4Va3H6
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E43@@pP4S=$""3H6
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQES@-3,4S=P&|H8[@H56*1J1-4C@
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4Ci@@`P4S=&HftHD@
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQE4@-3J4S=P&H8@H
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQES@-R4S=P @ZX5?HqUNc#O9
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4+@@P4S= X@y`oHJ?
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQE4@-p4S=P @yX5?H
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQESv@?4S=Pz@He@f9>1jfxx
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4$@@P4S=z$HN@
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQE4v@?4S=PzDL@H
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQES@,4S=P"(YAHK5fZimW~e-
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4N@@U"P4S="HQA
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+i&eQE4@,,4S=P"(FAH
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4Cj@@`P4S=&HfEHr@
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4%@@P4S=zHy@
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4,@@P4S= X@z`?Hy?
+[DETECTION Module - [36mINFO[0m - 20:22:16] Ether
+#i&E4N@@U!P4S="H|A
+[DETECTION Module - [36mINFO[0m - 20:22:17] Ether
+i&eQE^@81h!^PJPU1nWOgCVln{I-,V
+[DETECTION Module - [36mINFO[0m - 20:22:17] Ether
+#i&Eb@@Ph!^JKPh{5p>"y%%epxA7Q{uz1
+[DETECTION Module - [36mINFO[0m - 20:22:17] Ether
+i&eQE(@8fh!^PJKPUs
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E@3'@@Pj5,logs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE;PjP5logs-01logglycom(4S=!kroot-serversnet!eA!hA!mA!gA!iA!dA!cA!lA!aA!fA!bA!jA!p$:-9S*!?6()ma5|U!W$^R[
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E@@@Pj5,nflogs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE;jP5~flogs-01logglycomFns-1367awsdns-42orgawsdns-hostmasteramazon uQ
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E<@@!WP4S= P%zs0H
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE<@,4S=PP SN%zth:OSH
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E4@@!^P4S= P%ztSNH*
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E}@@P4S= P%ztSNH+POST /bulk/edcca201-4028-4ef1-bbb1-c78b430dd74e/tag/electron-production/ HTTP/11content-type: text/plainaccept-encoding: gzip,deflateuser-agent: node-fetch/10 (+https://githubcom/bitinn/node-fetch)connection: closeaccept: */*content-length: 808Host: logs-01logglycom{"level":"error","from":"index","type":"RendererWindowError","error":{"message":"Uncaught Error: The WebView must be attached to the DOM and the dom-ready event emitted before this method can be called"},"data":{"desktopVersion":"2018-1","desktopCPU":"AMD Ryzen 5 5600H with Radeon Graphics","desktopRAM":"14G","clientEnvironmentData":{"idbSessionId":"2558f01a-fc96-43e1-bc9a-327d17105eaf","version":"23102519","isElectron":true,"os":"chrome","platform":"electron","userAgent":"Mozilla/50 (X11; Linux x86_64) AppleWebKit/53736 (KHTML, like Gecko) notion-app-enhanced/2018-1 Chrome/8704280141 Electron/1150 Safari/53736","experiments":{},"storageUsageEstimate":34229508,"storageQuotaEstimate":153159101700,"userId":"8ec51270-00c8-404e-8030-048447953d83"},"os":"unknown","platform":"electron"}}
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E@?n@@TPjX5,^!wpingarchlinuxorg
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E@?o@@SPjX5,urpingarchlinuxorg
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQEc;jP5X{!wpingarchlinuxorgredirect0^_!groot-serversnet!kX!lX!iX!jX!dX!fX!aX!hX!bX!cX!mX!eX!Vp$:-9S*!u6()a5U!W$R[
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQEd;jP5Xrpingarchlinuxorgredirect0*&6!droot-serversnet!ad!bd!md!ed!jd!hd!id!cd!kd!ld!gd!fd&!p$:-9S*!6()a5U!W$bR[
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E<I@@P_PWm
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE4"@,4S=PP SN%~H+
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQET"@,4S=PP SN%~H+HTTP/11 200 OKServer: nginxDate: Sat, 28 May 2022 17:22:17 GMTContent-Type: text/htmlContent-Length: 19Connection: closeAccess-Control-Allow-Origin: *Access-Control-Allow-Headers: Authorization,Host,Content-Type,X-Forwarded-For,X-LOGGLY-TAG,X-Real-IP{"response" : "ok"}
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E4@@!\P4S= P%~SN*H
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE4"@,4S=PP SN*%~yH+
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E4@@![P4S= P%~SN+H
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE<@-_PPC%Wn$SJl(%
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E4J@@P_PWnC&rJl(%
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&EK@@VP_PWnC&1rJl(%GET /nm-checktxt HTTP/11Host: pingarchlinuxorgAccept: */*Connection: close
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE4"@,4S=PP SN+%~EH
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE4@@-H_PPC&WJl(yr
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE@@-{_PPC&W*9Jl(yrHTTP/11 200 OKServer: nginxDate: Sat, 28 May 2022 17:22:17 GMTContent-Type: text/plainContent-Length: 25Connection: closeCache-Control: max-age=0, must-revalidateNetworkManager is online
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E4L@@P_PWCJl(y
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE4@@-F_PPCWOJl(yr
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+#i&E4M@@P_PWCJl(y
+[DETECTION Module - [36mINFO[0m - 20:22:18] Ether
+i&eQE4@@-E_PPCWJl(
+[DETECTION Module - [36mINFO[0m - 20:22:21] Ether
+#i&E4@@TPlwl>(=S
+[DETECTION Module - [36mINFO[0m - 20:22:21] Ether
+i&eQE4vlwPl(>(_Ji
+[DETECTION Module - [36mINFO[0m - 20:22:21] Ether
+i&eQEA@8Lh!^PJKPUe+$BM%?N
+[DETECTION Module - [36mINFO[0m - 20:22:21] Ether
+#i&EE@@Ph!^JdP51`bUFqou
+[DETECTION Module - [36mINFO[0m - 20:22:21] Ether
+i&eQE(@8dh!^PJdPUr
+[DETECTION Module - [36mINFO[0m - 20:22:21] Ether
+^i&E@9P1lM-SEARCH * HTTP/11HOST: 239255255250:1900MAN: "ssdp:discover"MX: 1ST: urn:dial-multiscreen-org:service:dial:1USER-AGENT: Google Chrome/960466445 Linux
+[DETECTION Module - [36mINFO[0m - 20:22:22] Ether
+^i&E@!P1lM-SEARCH * HTTP/11HOST: 239255255250:1900MAN: "ssdp:discover"MX: 1ST: urn:dial-multiscreen-org:service:dial:1USER-AGENT: Google Chrome/960466445 Linux
+[DETECTION Module - [36mINFO[0m - 20:22:23] Ether
+^i&E@P1lM-SEARCH * HTTP/11HOST: 239255255250:1900MAN: "ssdp:discover"MX: 1ST: urn:dial-multiscreen-org:service:dial:1USER-AGENT: Google Chrome/960466445 Linux
+[DETECTION Module - [36mINFO[0m - 20:22:24] Ether
+^i&E@P1lM-SEARCH * HTTP/11HOST: 239255255250:1900MAN: "ssdp:discover"MX: 1ST: urn:dial-multiscreen-org:service:dial:1USER-AGENT: Google Chrome/960466445 Linux
+[DETECTION Module - [36mINFO[0m - 20:22:26] Ether
+#i&E4h@@P4bhL[!<
+[DETECTION Module - [36mINFO[0m - 20:22:26] Ether
+#i&E(x@@P4q/+jgVGP8
+[DETECTION Module - [36mINFO[0m - 20:22:26] Ether
+i&eQE(*@vm4qPVG/+jhP@+
+[DETECTION Module - [36mINFO[0m - 20:22:26] Ether
+i&eQE4'@U4bPhL@\x
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E4b:@@P4U2sZbqC1]!l/7
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E4SR@@yP4q4Nztx
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E@@@Pj5,,1logs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE;|yjP5logs-01logglycom4S=!broot-serversnet!cA!eA!hA!dA!mA!gA!jA!fA!aA!iA!kA!lA!p$:-/S*^!?6()|a5Uw!W$mH[
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E@>@@Pj5,:logs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE;}jP5~:logs-01logglycomFns-1367awsdns-42orgawsdns-hostmasteramazon uQ
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E<A@@P4S="P+6eHD
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE4_4UP2ZbqCsw8G]\
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE4v@j@U4qP4tNz@y{
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE{4y@l4q6Plo}PNlq}8g>CVE#gx?O;<w8~{sJ^Mhumd${,U#}]&cM-yY7|&)8XzYP@a6IZ$x]a6Q*BcUE5nj>g#$"PZB=tcr;d90wZ5u2AFv?Lee*tXI"@"PQ}
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&Ey@@P4q6l}oPU+;aXBymLJ]T k-y(G9T(UZdI(o9b!oO5$MXYirdxq&hvelp*c5w&ab[{h4jUH?Z
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE<@-4S=PP""$+6fh)SHD
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E4B@@P4S="P+6f"$HE-
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E}C@@yP4S="P+6f"$_HEPOST /bulk/edcca201-4028-4ef1-bbb1-c78b430dd74e/tag/electron-production/ HTTP/11content-type: text/plainaccept-encoding: gzip,deflateuser-agent: node-fetch/10 (+https://githubcom/bitinn/node-fetch)connection: closeaccept: */*content-length: 808Host: logs-01logglycom{"level":"error","from":"index","type":"RendererWindowError","error":{"message":"Uncaught Error: The WebView must be attached to the DOM and the dom-ready event emitted before this method can be called"},"data":{"desktopVersion":"2018-1","desktopCPU":"AMD Ryzen 5 5600H with Radeon Graphics","desktopRAM":"14G","clientEnvironmentData":{"idbSessionId":"2558f01a-fc96-43e1-bc9a-327d17105eaf","version":"23102519","isElectron":true,"os":"chrome","platform":"electron","userAgent":"Mozilla/50 (X11; Linux x86_64) AppleWebKit/53736 (KHTML, like Gecko) notion-app-enhanced/2018-1 Chrome/8704280141 Electron/1150 Safari/53736","experiments":{},"storageUsageEstimate":34229508,"storageQuotaEstimate":153159101700,"userId":"8ec51270-00c8-404e-8030-048447953d83"},"os":"unknown","platform":"electron"}}
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE(4z@lA4q6PloPP
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE4>@-4S=PP""$+:3HE
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQET?@-4S=PP""$+:THEHTTP/11 200 OKServer: nginxDate: Sat, 28 May 2022 17:22:27 GMTContent-Type: text/htmlContent-Length: 19Connection: closeAccess-Control-Allow-Origin: *Access-Control-Allow-Headers: Authorization,Host,Content-Type,X-Forwarded-For,X-LOGGLY-TAG,X-Real-IP{"response" : "ok"}
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E4D@@P4S="P+:"&mHE
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE4@@-4S=PP""&+:HE
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+#i&E4E@@P4S="P+:"&iHE
+[DETECTION Module - [36mINFO[0m - 20:22:28] Ether
+i&eQE4A@-4S=PP""&+:XHE
+[DETECTION Module - [36mINFO[0m - 20:22:29] Ether
+#i&E43@@P]8:h=<\}j;i
+[DETECTION Module - [36mINFO[0m - 20:22:29] Ether
+i&eQE45@+]8P:<\h>7+[;j
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E@@@LPj5,Oflogs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4@@$P4S=4Va3WHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E43@@pP4S=$""HN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4Ck@@`P4S=&HHN@
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4-@@P4S= X@z(HN?
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4&@@P4S=zHN@
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4N@@U P4S="UHNA
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E<X@@P4S=(mFHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E<N@@P4S=*rHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E<@@wP4S=,:qxHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E<*@@P4S=;HN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQEj;ujP5flogs-01logglycom4S=!mroot-serversnet!iA!fA!jA!hA!dA!lA!aA!bA!kA!eA!gA!cAm!p$|:-,S*!6()a5?Ut!^W$E[
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E@@@&Pj5,logs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E<4@@P4S=0wNHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E<@@ZP4S=2N<HN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQEu;vjP5~Xlogs-01logglycomFns-1367awsdns-42orgawsdns-hostmasteramazon uQ
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E<@@P4S=$PH*}HN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQE<@,4S=P(n>h%iSDHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4Y@@P4S=(n>HOoD
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQE<@-4S=P,|:hMSFHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4@@~P4S=,:|/HOoF
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQE<@+4S=P2@NhSGHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4@@aP4S=2N@u\HOoG
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQE<@+4S=P*XC?rhSFHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4O@@P4S=*rXC@HOpF
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQE<@*4S=P0~{h-?SHHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E45@@P4S=0~{HOpH
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQE<@4S=PT|<hSHHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4+@@P4S=<T}80HOpH
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E9Z@@P4S=(n>HOpD3=c3EQ^qB LInSEGsNNr+0 jj+/,0/5logs-01logglycom#jE5-&7T Q|7_0IYY*,N}Pf'vEG];mIzi&=F "|*W*nle5n+Vsho2]bSZBBPt}B,si]Uh2http/113+) ",xE^6ok/ug-+ZZzz
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E9@@xP4S=,:|/@HOpFq|&PM/Wwytw{\ LInSEGsNNr+0 jj+/,0/5jjlogs-01logglycom#jE5-&7T Q|7_0IYY*,N}Pf'vEG];mIzi&=F "|*W*nle5n+Vsho2]bSZBBPt}B,si]Uh2http/113+) RS]zQ0>C-+
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E9@@[P4S=2N@HOpG<8eykJm;=X>nV@W LInSEGsNNr+0 +/,0/5JJlogs-01logglycom#jE5-&7T Q|7_0IYY*,N}Pf'vEG];mIzi&=F "|*W*nle5n+Vsho2]bSZBBPt}B,si]Uh2http/113+) #S|L2}q6P?taR8-+jjZZ
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E9P@@P4S=*rXC@wHOpF-s%?!5Z LInSEGsNNr+0 +/,0/5logs-01logglycomjj#jE5-&7T Q|7_0IYY*,N}Pf'vEG];mIzi&=F "|*W*nle5n+Vsho2]bSZBBPt}B,si]Uh2http/113+)jj 1PhS$A]Z-+jj
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E96@@P4S=0~{!HOqH(dJ@po}wxx LInSEGsNNr+0 +/,0/5**logs-01logglycom#jE5-&7T Q|7_0IYY*,N}Pf'vEG];mIzi&=F "|*W*nle5n+Vsho2]bSZBBPt}B,si]Uh2http/113+) zvKC?kqE=S_D17tC-+
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E9,@@P4S=<T}>HOqH^<g7k7h%eYX:k8Av LInSEGsNNr+0 ZZ+/,0/5::logs-01logglycom#jE5-&7T Q|7_0IYY*,N}Pf'vEG];mIzi&=F "|*W*nle5n+Vsho2]bSZBBPt}B,si]Uh2http/113+) a`RMM6bR8x-+**ZZ
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+i&eQE<@,4S=PP$]Ih}YSJHN
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E4@@P4S=$PI]HOtJ
+[DETECTION Module - [36mINFO[0m - 20:22:30] Ether
+#i&E@@P4S=$PI]xHOtJPOST /bulk/edcca201-4028-4ef1-bbb1-c78b430dd74e/tag/electron-production/ HTTP/11content-type: text/plainaccept-encoding: gzip,deflateuser-agent: node-fetch/10 (+https://githubcom/bitinn/node-fetch)connection: closeaccept: */*content-length: 711Host: logs-01logglycom{"level":"error","from":"AssetCache","type":"requestReturnedAsIndexV2","data":{"url":"/865-6392b546a6a047fa46dbjs","desktopVersion":"2018-1","desktopCPU":"AMD Ryzen 5 5600H with Radeon Graphics","desktopRAM":"14G","clientEnvironmentData":{"idbSessionId":"2558f01a-fc96-43e1-bc9a-327d17105eaf","version":"23102519","isElectron":true,"os":"chrome","platform":"electron","userAgent":"Mozilla/50 (X11; Linux x86_64) AppleWebKit/53736 (KHTML, like Gecko) notion-app-enhanced/2018-1 Chrome/8704280141 Electron/1150 Safari/53736","experiments":{},"storageUsageEstimate":34229508,"storageQuotaEstimate":153159101700,"userId":"8ec51270-00c8-404e-8030-048447953d83"},"os":"unknown","platform":"electron"}}
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@+6D4S=P2@NtJpHOp
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE@+54S=P2@NpHOpQMWnn4e+L=: ZF LInSEGsNNr+0/(`!~U+rb8<eC%
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@_P4S=2N@:qHPp
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4_@-4S=P,|/:opHOp
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE`@-4S=P,|/:DqHOpQMT0K_`!Ie0, LInSEGsNNr+0/(<0$b[w'%pg@zyX'
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@|P4S=,:| HPq
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@*H4S=P0~{rHOq
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&Eg@@+P4S=2N@:-HPp(EU(_ueS?S
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&Eg@@HP4S=,:|HHPq("SKJ9}s+/254N
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZ@@7P4S=2N@:HPp!LQgh:dtz,`\)/5yEB9chbX5sta7:Wk,I-b8^R8^zLdF]k5>D#=LT/g*E'nE:@#&#f-f&&r(]2#3w%6)cp,+6f*VAw9Bei/X:ZBNgU\XrI8kqr]E#&X;m+K9DJ4e-OhK{*I7jD58AfI8QLO1'kQ{5'YD'|P"-sdrr4^i2!Qt"( i{S_Eed"ymv *gLcG4kj8*[EdPpXj$s#A75/#"8QQ0
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZ@@TP4S=,:*|HPq!dm<ZYLoWte(kuc2?y<=R<B+aK8fyPXUwa!Y9fl=`(+)=?cUK"PB>q--wQ]\w8r`gtZlo|ky;;pla](PG)TQR?hiL-}Yg=\\\iO>3@^mV]XW&UK^6|R';ZGM^+,PH$oii0 hbY^hIxo(A_|K4Q[UP:_yh5}Y:'sepRtt8j-\>&v{]r5tPLa2pE7q/
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@P4S=,:P|'HPqo8W~m(=v{Hc0S_S_%z-@din\2{tm)l<~ng<;X&e~RU:&35&^7jPF`6$B*c12^APLT({^KlHBQ=<M5Yk`{XkM7:cwQYcGdyH4@/gI$*[ }/c_{GRv*Vc|^,o)Y2]!8U@&W8a_N$|Z>8)35M*Zn1A8F1F:y[9=O+%r y4\M9^c-efcj9V;\S=M%* `Rlp2mVIreD?E'7gIc53uWS'a;M(,#t&2dv:r/r]5!w2;Dyzkl?>Pzu'+[D,:-K^_UE?X$S[E$1knjV]JX@Hr}<^OJ}<L>Xwjqs9Wo/gZ&hMp/>J]7c]*urcB&4|o799mwMP'zklPnu'u|(#;1:(dT*=Lc?*{s%t_?5:3;L~1'nF"_LNJd}Go'@aD v?Fj}(J|;5?2To]jsSjl$aQbnb?U$2ab#KbWjoL mkOm;|NN]}IJm7iWRCw5=-?k$U)sMJ]e\DlND`iCN1)ASe1kXj&
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@P4S=,:|lYHPq90jcg{yac]T2QABOOu4{y%N&kF'0AMs)P%QMW,{h/&5/KxJ XEY2, >+XQDJgm&a/6||:Y=g0~kW[}&P&8{LYNHJ9+2]2p<^HJ[,;t|Yi|>)`=Z#'RE%QC1FQ@^%@4!s3mnw/J42dy <AWA{,nj!j:(NejwR\<70Un r18jtwyc?tGp_S,KLKHw,'jVdO=7:QU,zm#c\*YsLq1oo7j'^J3uG%Iehd4vo^LYFBA2$J\qO]CPL&nQX5N&(Sn3[1+>y'lPb6#KM+@](x`o'XF/AiC>b~VJmO5&ENl+"=(K0y2Q8_3MaZ-@Em;QlS76Y^]YJ)1x'M8W2S@nmRh`U#Xrc;'8b1r-&d<B`*'1r43[k y;$HR~h@SzAIec n;l~&eMb,kF6z&GL[p9$|v)f`SIavQuGK^(rSVEIYr6E7vdSPp>`K~R~X'<WN{!?TM\
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE@*4S=P0~{irHOqQM!~!hg,Ga_M,X?+) LInSEGsNNr+0/(Uc_z(93}XmJ]j$
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E47@@P4S=0~|WHP!r
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&Eg8@@P4S=0~|WHP"r(YJXni;`|"AkI4C
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZ9@@P4S=0~|WHP"r!vB]g\[NU+*{~0T4=p,g:&L?1uLP&O*]?4R,VX!GF>[9)`!CjgpxSO+Sb;1Q8?f@g_xW{kBA!n&J|u0:wtB4^q)aaeLGl^Vb~ze;gpi e<R/x`'wMYR-x$-3dIENF4LKIJPNP[ZG]~IhGmgL1JsaF>6>AG#{Rk|9@=k5OGfD&FQzW N>A$/'iUj%ck+f@_LYPpIq=
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E:@@P4S=0~|WHP"ro68m$?6}r:2J%59NJ`J%l22b3M}k$v8`640rO\I"w3lGv7U8"^Q~Zlrfkd]kZr:TPe_C+r~[J6\Xe<WjT97B]g02l+Rk}d9 7OE#+/%wm_d>2:n+0\f>_~} 4Cn*r7S`d)g@n1bJ&i?As_'n@"M2|U"xYM'(q~6%/prS|dlUc: nym"|x(^1'oMq?BNdIzg3LvlQS-D?yt~TK?7y&a$@j9%7tegq~G2JAqgTj>}0Q_a+z7#fn>w'@}^NKn3z_g]Oj~1eq~;d6{K/7%]l@Cdh\[6Y KWL_^%Hp;#wrT[fxWXB!(O'#L/ee[l/xX\+fAhaO+`+c,Tek]ga?2@Vbh1odnh8(B==H6VM~jh1FV^@]pOz*|`F4;t>-mFN<'gfp@Y]21k*E>_BzHcxA0*H5=ii5}ChEWIY<}{:YBOK*h/DU29P;SPksXT8;v
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E;@@!P4S=0~|WHP"riz8Q9#>5S:]<fz*stDe[==b^~I/~|8j9@)~aEaZI`+/Oftq[bI,tes=:{H{(V)8LdaV(~)E%Msj9`QRkj!+<rRESc u9Aj_x&Nn)_wt]rym6{f_L53Uq,(S@t`h1Q{Rz{9'j,Y|^gb<aaLPgPwA>\-mT||mXbg|s<7S8$#$-3NU?HpV%d _3nP!ar@>ADwaaSAz4z$rU2,tglhFKwz`&wJTjHwaLGqa0--a\s-2la1R2<2ku?oUpAbQr*H6 }3:en>&4Vp}``kK=LK^L)!X6,1mP)Zz:ubuf<A}N(lau7XKcEq$!X)onO41AIs@kb2DT?$1aUH,h0'wmbutD<I0 Y&D=B/Xt!n58&+&0SUd=ZvZ*'i74v6;T}tvH~{#/+%<S>/'V6QU*uY8P 8Vv1J-%HUiC/8qf9Y^ma|1_0+6;N>!V&vTnh+:F,
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE40@+4S=P*XC@rpHOp
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE1@+J4S=P*XC@rpHOpQM({GpiN'T1h LInSEGsNNr+0/(P~A8(~YyEU4fa@y
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4Q@@P4S=*rXCMHP$p
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@,E4S=P(n>pHOp
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE@,4S=P(n>qHOpQM_8)nf(4"0 LInSEGsNNr+0/(%dq1/sAr7*`V;K2Py
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4[@@P4S=(n?9HP$q
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE45q@,4S=PP$]1qHOt
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQET5r@,s4S=PP$]1D9qHOtHTTP/11 200 OKServer: nginxDate: Sat, 28 May 2022 17:22:30 GMTContent-Type: text/htmlContent-Length: 19Connection: closeAccess-Control-Allow-Origin: *Access-Control-Allow-Headers: Authorization,Host,Content-Type,X-Forwarded-For,X-LOGGLY-TAG,X-Real-IP{"response" : "ok"}
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@P4S=$P1]!4HP$q
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE45s@,4S=PP$]!1qHOt
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@4S=PT}A7qHOq
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE@n4S=PT}A/qHOqQM^E-XB$}XLWSkCIC LInSEGsNNr+0/(Tg~^L]gHFE*"g8A(
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4-@@P4S=AU4HP$q
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EgR@@P4S=*rXCHP$p(pu]p}$hB6^8
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&Eg\@@vP4S=(n?9gHP$q(R5G@4|?:rt:x!
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&Eg@@P4S=AUvHP$q(zbBh0C&$tjL9Kt
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZS@@P4S=*rXC|(HP%p!eRBv3S|V?*2~qJn4CQ9@s'TTu8W'~RkRj\jn,E-iXz+@4K nE;E$RbZNI|JM^09Oi_k!D[&wpOvT1ry;o%Z8VbQn[p]L1H)01HvM'rnH4;X5apK]}5V [QqRPZUH[[,E#ghEOh`LM^z=j#_S=Em_`@A"7$m AQ(uf[e=?3#)GWcrL|HYSatmhU5fxl\ey|Ar%{%QZ]~7f\s*hEv!;%~D;B
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&ET@@P4S=*r&XCvHP%pgA0=Q90`g-2]s&gV#ZTs};qMIn@2[R@>XnZ^bHl)rRL~a`FRdb/ (DO-X%~>yO{CP)LfFQS"}@qic+pbrKtWVrzktBt]FRd:bdbtR0}UC/g_E>BugFikqMUh;5g;y!wE$v#NU`I6-=_M(Bkj^^Yhcx;"#,fXqZPY^guWmW/?&)=/8,CObU}%C2HU2@)oO'/g21jC|ha/k>q{\M<n;|`\R1!=9DSTj//[D6U]{9LWnv (i3V3_N/ccbt a0Wkl)o_(=Uf8; 15:KQ@D'[>$_D'&G`SJ;qM^19EQ0pD~4>{A5i< \?s(Z,3I+VXz*r4O8A!rEb|p3tZBYy7IQi|BOg/F/U*35Ey\OyokCEL ;!l~@a5"X##s[*TY;7<A==vSu3x|/Uw]M/Kk/m/hXEGiDqO1y53\5Fj';<=8oE?;q3\v;hE+$'<t'xWMWYvI~X)1qt1_&,@K"_rINo:IN01T[t!}SQw8w$D'$t`dJx'S("AG)4g;j
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EU@@P4S=*rXCHP%p]sM:;z,8^BmPXfzc@(Q/BA=)u6}wAi4}K>bv9&e4]I@VkXbbh?WeM5UzH[O7eyGt'!&,!{LP!WQI02BB[5y,IU8L)3<n9)Eyz@Tj76MU}q/!%x//Z<^c16J1i][:tN]K(!pFY9]c#tb;!vWh8uH&hnoJwc{EO7>?x(~^PUcO,M@UP7q5l['#:v|lBK>]fU^Q_by/$6ITw9Q"Fwz3z"&AIV{x%Vj+6Lv&`4oHZ[dp+z=w< +@h#H3iD0KtQwiA2"J>Z=@yH7u636ItIF_Y^CJzE~I&`%dR/EC7M^oX{ [!"eR4Kzy8E^:9)OE-u"TTbN"2,)=q={V4xrsz|@?[AGsA\6Buv/Qu{Q7$9KiO3^8Y/>RGcN,\hgn`'}N;/t`i@5ART5J]ubuCXY\x#Y`;jMDaY3K2=vOzqd/rXb!jHj?H0ldWG>elR/0ZyHW^L5A?C!<qEJwaSpH+%g
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZ]@@P4S=(n?9HP%q!FN,(*I^uW(2(\{t~Lb]Vr$_BqQjNmQ~bihnO2u"[r71S"kf:Q}4'%-$+P5iHl!!)98#EO; 6Fc#OmCVQ^%K0=xAm?}0'T0S=mH7CkJ{\b623$clkk8upWjS-(b8R7k7\B0_R'NY"TX!3"MpF!f\qZ{bL`4ENAjSHYd2-)rcQ*5:n0hMTJe}xF}7a$t1_
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZ/@@P4S=tUgxHP%q!1\S@;;]H4#`Xc;p&Hm$\MWnA7&(oTDyzolR +2FR-`Y?a5u)-G bT-@p`y@MbX`'u;(RC8(M}x`xWKNR-R;f9z71[)htTdqxVskrRMSg'$%x?S#ZP4%?j<9"-aXniro^aW,l==;:9zi[VU;=+A$q\d =ya?lP)lQ6+r-GbU9P=3u*!3v~8A8/%,{$jd%JLTSr#Cz
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@P4S=$P1]"0HP&q
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E0@@P4S=UHP+q00b@SKY/%`\*hZnF]~vP*~`7b5aWMXASb}5D&A0i9<zm6hWO&IxJ^SM|=RJPG,TWF=I|(0gh@lnuuJ+:\~lY`R0sco2Jnp6xf;W()b;*|$=b)/nkDlbS[:>\P$O|!>N-87$uf9\*y )E 0[=|OzHmGMAi:5\-I`_5IYnjH7<t_&Nf%]$5Y_1-E|zW;!&Evnh]^!uC^$1PX54Ga(ptO}vF2?zWbQoow;xB;RFvQ\09N ~gayX-,^c4$_zT/S)I`:4mI?{>PML`tL7d#gp\~8oamI!4L\18&'#v7ww/a?nIQJWQkZP|v89$8^zHZhBcNCx;jED+$q^,wA`E`}w%9Struk(}WdWpz$i3+'%n!BmR/Y5F/K(~`u/w!/&DS6JgQQYglrV;kj3:904V!}nF*k`-{LGXOU}WLwF9%5?/Rv[}~Q-5&7tiM`FVe4Kv2qyA+*2"(iuI]M)'SYgWnAMt
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E1@@jP4S=fUuHP+q#ZV&5e^y&*h}05rh1%v-eq6wng-WmR<H?m&=kKZK$X|Y-(1W_/"kJ9:1jY4LgM"%Mn6V'X2mHJ'i~pe*YnXU}5}3zXkX6,I9X$qD^WbE_%bw:U L5^=#N[OSo-Bjrd0*{
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E^@@P4S=(@n?9t&HP+q0cD})hpMJ*1d#l 2"[t6jX8ZGG#-3{J1Tp`QCI,g2Zg14cE@ypTIY<>`H7DUm34OF04?%uT:mV5"/ic9!EOdhrMBE{TzDqW@GD1#8x4|}U"fpf,JU141QxEe@9U7P)#E$q2}k{-LO$b6W-T!zTXWs8yC/<],hH-uOe!E?$^W:dz~MFG%5 C"WpsE{mo lBz"?n9Ko*l3<oO*mSrW8GE)6nTHS4c/@r_xG[{^{{]]}jbG*b ~+^Vi'+)DI#}nj!-81+/S$S_[_*,2qA%lSQ>T-v%k6kZsiLgE/w>>B_t2<8(S4dTNyt{&,9\DW$Uz=3u5VG\z*yXD$}BlvC?dTz!E=E)t@X2RSP^dIfExz;`$^ Vk30NTW$,LLLIb]&|Ec7tTwrjQ]r01{tYxM>$7%|*T#xAg+]Pw&j~:[|:va5E=sKMqp*PSv
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E_@@=P4S=(n?9HP+qUHy3_uSD0L6X!^o~j:N]II1FtRfNqR2G&v^]M}'jKhG|ZksUwET#tu(Af(ZcV29B$&HCV#n/QJnv|F&<piMKP59% )~]hdFbX$ h=gndD4Lh tdz?oXO95
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@P4S=2N@:&HP+pQIbXo_RsQ~0\7\um'VQDM@Za;q"Vo}$i9|`[JV4xm',z -y2{h%$ffA%]1J;nmVOR@1%:uDOJxSYybFpfxxBm]9\ajh2HzZxBbEfwpTxQr-yf4rbq-_O9^KrA];)#\b:L3(D>&*Nk[ eo[3{c62aoeI#0O4^y/:,}G>15G03`Q/b`)EG$$~i5,{w+;2(S$Ic1GRd"2|WZH*~wQ#l`5w${ox#C:&\Pj!hiNG:J)M#fWn',OaN{`qd$-F>65IR(LTZeM8D#9sZn@&)P],NK4B{ $/_6p~qA^q$9\e~0_5!2=j{5B4@kL|<VKMiEgRH])q1a*Dzr+N@uH8J>0QD!F}ZG> 5(zoAsy&Jfv<U4TFxlJ?a[<sTF>G1vi]1>\(hW|wuzXT!XtCYkb[b1kgAT!E'4vi45 xV,4*AE^jdk6[NC}"gf:e'jMR Q-[
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EW@@8P4S=2N@:@HP+p-k9{z{0eT}}@D,?I7Lpxv3C&AR2F!2Xi!9iD\Pvu0P7m1VbqyHh:3Qu3U)&BMl)^S|pv)K)gPDNacWFu:3*#LwLs*{]`?A\+>_qQ1)`Tu=5)e)C\SA(CZrG;TezP4`<RSwK0 8As>g:EbW$4n1To: Sp[}^2U_RA{A?0#}(8{lq+qU]e$>'YSw6S":p_'Ms}~$pEehe//`%*IeT7U`crZPvb'g
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@@NPj"5,%:Flogs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEN;tjP5":Flogs-01logglycom4S=!broot-serversnet!kA!lA!dA!mA!hA!eA!fA!cA!jA!gA!iA!aA!p$:m-,S*!?^6()a5Ut!W$|E[
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@@PjH5,Ologs-01logglycom
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@+6B4S=P2@:NpHP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4a@-4S=P,|:PHP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4b@-4S=P,|:HP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEvc@-`4S=P,|:KHP=<0$b90WzUa~"63?ST1*Rc2l}q{p*g2]7b[7c~ZHU{dH@xqZhc2,g xbnSb}g=?Zn~Z!P=j*16}+lQgzZW|T;Q0"6^i8hXa`sO%O&-=s/FE*!(66:MtWM*hYL k
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@wP4S=,:|<HP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@+6A4S=P2@:NilHP+
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEv@+44S=P2@:NHP+=`!~dLh+Ik);|kO7y/fpE2:*]Gt2:9jq",`DF]El}hv3;Q]h$B}Evz$z/[/fur<j94rqMXldT"E&j_|lRX$)G2)`pih5>+J0uaou^GX6M9p-wUST^|G2Lto
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@ZP4S=2N@|fHP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZ@@PP4S=,:|2}HP!fYxcY+_JGan[!2x`$Zr+<(8X>-Xnwq\}vyL2Yu\+GZ+~d\)j+X&<tq&xytIOSLP0?CG5LtZ\K%|#~JcTw{{v] zd!,$F@0L3LK,$dGXMW*r]R{J59J)h/T+uLuuGc<\D[%KUKMRqWoC2,N-w43D_S#iB/gS?]?bG,F5|/r'RfkWw$e]d3{7|lNX>RbBgR
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@P4S=,:|GHP0[|3sjEc@O3}c7>lT{YI~s?YqNhC|{Mu556V\F+ILaX49SV*[FS:!a^j:<Rla=9L9#rN:V[T*D7^McNWC J~:#eLI uA}Goj8ZhudclSGx(,Y\d`LVzy&0y[wL~AXK~10Ye<oT!65 4zL(n>$o<O98H`"uN,:?0eZkm]YQP>A&r8$@-rS<JTPFW6$sG<&pt{<RG)?O'*7*>y5\&5"3GkG"0'?L*=e"ducD^F!f717(~kR#dP1q#HuwyPc!C3ps$w1c"#O=xGMr?h3j_^;do/YN*=nI~3G;LRw6z!n{Z= JIXRr\^4O&;;5pB@"sRmDAt4#Ip>TxIP"TnPh)K_1&VBdN[MU]:7V8>AV;Vy:Asf!U*tC 4F^|Z?5Fn']"*SZlM(``n7kf9OeoiN'FjG+9W<e=V;c5h-=8) upjj!x_?)9L-D:&6L-
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@P4S=,:|$HPqWNO99z3sn>ZvjE^udvHyyobc(HS*@iQ"9P=iS]gk",0&X!n}kJ0ehQh%0!<Y'R]z;-Xw'Lj\O'h5)1T+!@7{tE93a(|x<R:kJxImCW/V&d6NGRcAx3"%hSyPve+5a%^:
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EZ@@3P4S=2N@|HP!kuOnUs=K+yqTibu|#l3-e:jz6~ZZi;(!>-|S[ DfRmFG`Vb;-y+&o'](#rk]u;*J1EKqtdfzdNRKtzHT87c>;(^"q;zhcRk~3k#gt}d7@#N|z:v76s>j/;2w_4B[YnTO\+\^]aJ/iG'a<9O6mZ}yebG7L c}vF,^KVc'Hnmoiy`[36dT6lySRKp*!kPDYx}/2jR`C68Izw
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E@@P4S=2N@|yHP6#r~aN^3EGE7s,,$eA!4J2K=%k"QR!1!qlu[\h8@f1ZZ6@htzE,+,X3Z]FT,{mY>~l$Rx$|je:*J,fS67MXj!!Wo$fk1tWo*:cCq+YDon|l))|T(fB/E+l~~$uV=Xr`{!'Mr/9W|A,$e2 3zABhQ_Ng$-A~TXvPCDEH9`t[z) CRUF`qVmBI1VX"2/i!P[qnjS`FOQQ^Y^(o$gusx'+2pW5r7z,b1A?d~ypZ>rKY &nW$AkK_RzODJcP2L;hRaR/ CbH^WzGi}]ygSw7TFGe&GURnReT3KG<!CX^?=gk7N+T&C)pme@x*H&@n*T63uSO)d@}j'rQ8=BZ,6@}4U}sJ(eDqNw!6VB`>M'oTKG#Ige}SmIezd[ JTB6n:Zu#'a7xTt-xyaT",{<M6CK>tJP$r@`$SY$woJB0!?bP&tHtCQpD5tKOGaclPrV
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&EW@@4P4S=2N@|lHPISiwcZPGC?Gg;qiW&v&$fjVMByB4GjSe#|n8[B0azowDRti@+6A<h|r_2KOaUTp7/a7wl:zS/N>K&$d&W~&x?A,R'^86Ds"kv;=If9@w|5v6]!B5ys,=oQv2+?$!qPVFmS(d38F?XaaP0N&0^xAPA&`BF+$8;5xX)mWh~4W"WVn)n@:ntJiY 6ea^CW
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@*F4S=P0~|WHP"
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@*E4S=P0~|W{HP"
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEv@*4S=P0~|WHP"=UcAjo_Y@+g}ahPXiT^P:)m{36M $\QfJp2ZXf],G<Igbk "r|ukB]S]/rrZVSHn9VdLZX6f1VJ|!+Sx|q]=i266Z`%wrWk6iJp9}~9[]YB&Rz
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4<@@P4S=0~}HP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQET;vjP5H~Ologs-01logglycomFns-1367awsdns-42orgawsdns-hostmasteramazon uQ
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE45t@,4S=PP$]"2HP&
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE42@+4S=P*XCr&HP$
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE43@+4S=P*XCrGHP%
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@,C4S=P(n?9@ HP$
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E<@@mP4S=&PTbHP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@,B4S=P(n?9uHP+
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEv4@+4S=P*XCrvHP%=P~A8_;S151IF;wV@R?XyB0D6PulF4K03VxzbxJh|4`Z}B{P,q=O@UmX(eTP6b(Ct/ZCF/&A>B|NiGOL$MxxkXMBXIIaw%2lCR7W$5
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4V@@P4S=*rXEqHP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEv@,4S=P(n?9u<xHP+=%dq-oj~Q>5FR0]K{1f2MG12JdEtAqM[Z9"??8p>Wt|$k('"L[S]n'^(Vo]OmjW:M?kUt~SB[s<Vx/<gB2/qY5N#cfmRY*Z C;[MDx2O>P,`E\1KR)N,+1gk\')2foX$*1!gBF'c
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4`@@P4S=(un@{HP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@4S=PU3SHP$
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@4S=PU,HP+
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEv@4S=PUKHP+=Tge59=Jcf?:O89cgayLcxBt/L$'+"/lP9t7 %6L0^1H0_85P7kE X>"uI?Vz'f|OzL*/)<F-2?U(`I=G% uDa98dszA#dYa'Xzd(d8"h
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E42@@P4S=VH*HP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@+6?4S=P2@|N^(HP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4d@-4S=P,|:5|HP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEve@-^4S=P,|:5pGHP=<0$bo~A7^_)(4p#qxQeRVznVjP6*y}=3B6>oune79d)xQ`!wexIVKP%m4b^%#-ejbAkcNrYt]KAwAwenC7FqAR=6;;MRniJ)@+#;4PKzz9)BZ-Zl8_
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@sP4S=,:|<HQn
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQEv@+44S=P2@|NHP=`!~Wit  {VqtMULBBzZ'fQhh8w M*]f%Yh&{;)k/e0tI439w*)(t8KKi9KpuxsojPUVlvTM,F~Z<@"!m v^5jH|{-$!kK pX]7JfkWU]~Al*x,!{VaR<bF
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@VP4S=2N@[rHQn
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE<@+4S=PP&m KThUSHP
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@tP4S=&PTm LHQn
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E#@@P4S=&PTm LHQnPOST /bulk/edcca201-4028-4ef1-bbb1-c78b430dd74e/tag/electron-production/ HTTP/11content-type: text/plainaccept-encoding: gzip,deflateuser-agent: node-fetch/10 (+https://githubcom/bitinn/node-fetch)connection: closeaccept: */*content-length: 718Host: logs-01logglycom{"level":"error","from":"AssetCache","type":"requestReturnedAsIndexV2","data":{"url":"/postRender-8c7646700405e5aec9f5js","desktopVersion":"2018-1","desktopCPU":"AMD Ryzen 5 5600H with Radeon Graphics","desktopRAM":"14G","clientEnvironmentData":{"idbSessionId":"2558f01a-fc96-43e1-bc9a-327d17105eaf","version":"23102519","isElectron":true,"os":"chrome","platform":"electron","userAgent":"Mozilla/50 (X11; Linux x86_64) AppleWebKit/53736 (KHTML, like Gecko) notion-app-enhanced/2018-1 Chrome/8704280141 Electron/1150 Safari/53736","experiments":{},"storageUsageEstimate":34229508,"storageQuotaEstimate":153159101700,"userId":"8ec51270-00c8-404e-8030-048447953d83"},"os":"unknown","platform":"electron"}}
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4L@@P4U0b*tKW]!y
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4,Q4UP0tKb+$p]I
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@+b4S=PP&m LTHQn
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQET@+A4S=PP&m LTHQnHTTP/11 200 OKServer: nginxDate: Sat, 28 May 2022 17:22:30 GMTContent-Type: text/htmlContent-Length: 19Connection: closeAccess-Control-Allow-Origin: *Access-Control-Allow-Headers: Authorization,Host,Content-Type,X-Forwarded-For,X-LOGGLY-TAG,X-Real-IP{"response" : "ok"}
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@rP4S=&PTm lHR
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@+`4S=PP&m lTHQn
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+#i&E4@@qP4S=&PTm mHR
+[DETECTION Module - [36mINFO[0m - 20:22:31] Ether
+i&eQE4@+_4S=PP&m mTHR
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&EGy_@@\Pjz53<vortexdatamicrosoftcom
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE;p:jP5z<vortexdatamicrosoftcom'asimovvortexdatatrafficmanagernet7 A7,m!kroot-serversY!j{!e{!f{!m{!g{!d{!c{!l{!i{!b{!h{!a{!p$:-*S*!y6:()+a5Ur!W$
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&EG,r@@IPj53Ln8vortexdatamicrosoftcom
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE;qjP5n8vortexdatamicrosoftcom'asimovvortexdatatrafficmanagernetJtm1dns-tm"hostmasterJ,$
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E<%@@PA7,m4z
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&ES-@@\P-F5r3^89,J<GgXOX
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE4V@5-FPr5n,H^89
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQEMV@5-FPr5Q,H^89{c'>"Yfj_
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E4@@\P-F5md^8S,H
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE4{@fA7,mP4zwS
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E(%@@PA7,m4zPl
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E-%@@PA7,m4zP-0VyQV`t:R=34 h,o%?Uiau$/+0,/5vortexdatamicrosoftcom#3&$ -|PN-{CgDy-+
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE{@glA7,mP4|PQbZY^EjKuSoihqla[# PBom4Kr6Le&%x"wL/>0:0"'|m7'0*H0O10UUS10UMicrosoft Corporation1 0UMicrosoft RSA TLS CA 010220403205042Z230403205042Z0&1$0"U*vortexdatamicrosoftcom0"0*H0(ADlRbeR!VeZ<Z"X6\|O\Z-F2w6yD&=r}C(D+GFHs\$spsDfrmOByxbn,4Q  -H]:$x/r4I)yN|mjD&2!k23<m{;v<!6020}+ymigu>>52W(kkiw}mn:F0D 0RC(na]r/U$Ts oA`D-wYZ9B;pH`suswPcJy-gy6:dF0D 7(ToG/U^}('2&>H :5gnevetRKwz2T- 8Rp2M;+:WRR:WH0F!dNqB_HJGM!:7{I7`U0'+700+0+0>+710/'+7ua`]APd'0+{0y0S+0Ghttp://wwwmicrosoftcom/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001crt0"+0http://ocspmsocspcom0UIyUlykKo0U0AU:08*vortexdatamicrosoftcomvortexdatamicrosoftcom0U00Mhttp://mscrlmicrosoftcom/pki/mscorp/crl/Microsoft%20RSA%20TLS%20CA%2001crlKhttp://crlmicrosoftcom/pki/mscorp/crl/Microsoft%20RSA%20TLS%20CA%2001crl0WU P0N0B+7*0503+'http://wwwmicrosoftcom/pki/mscorp/cps0g0U#0v0BML\,d0U%0++0*H3!Vr"zi},#PQk>l%74W[/98vax!7iX3}>Y>3paeDIJCw>Ck0%3QRLq>{us(zdm&u'v~?W2`DbQp2iuFP>Kg@@Kl7r<$`otR*-Gl&Y-^lY1hoCejjMeu\1o]",Z!9 9,"r&whw>i^_<5/7*+GP!ieZ$e9wT@"PF!BJW1R0ncwqQ%iO1RAkV2`Fe}}Va1QJ1^0Z0B_  iOxA0*H0Z10UIE10UBaltimore10UCyberTrust1"0 UBaltimore CyberTrust Root0200721230000Z241008070000Z0O10UUS10UMicrosoft Corporation1 0UMicrosoft RSA TLS CA 010"0*H
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E(%@@PA7,m4|HPaE
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE{@gBA7,mPH4|P*0bwc6Q;FA[X8nODH:Q pc]xC)dI_+*n,i?S\l"g,[c7`kknkp1g34%b[Xuv?;B2mC&:,?%J#Iy4?AJ:&oF8sxxseO\RMqRz;TbZ'0&MVz{S1AtE1FB16C_Tdjy4=s6hYp|nE6C&wpWTDBc&#|oT+N]>[0RH8c#>'Bs#hqY^RM|Not"S`N1ONHciLK:0J`dOCD%0!0Uv0BML\,d0U#0Y0GXT6{:M0U0U%0++0U004+(0&0$+0http://ocspdigicertcom0:U3010/-+)http://crl3digicertcom/Omniroot2025crl0*U #0!0g0g0+7*0*H+g[{MA`"VH+<|cqz0F}"6onv(>f@QNgTYcoB1`d&z;pE&F=f?:86(WKdm`z?10dVn84?lkBRb<iWYr$Bc4v7>paGo0+GE^yT?xQu[( ' Af#~C93\DR#@i&m;UOO@[)zdCF7%R'Gx/yQ@
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E(%@@PA7,m4| P\e
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE{@gnA7,mP 4|P^8Dy4?cjf`>c~,%XG *<fXwhW}}8!r9n:zRB(K0\8"#%4Rr~U~lBvSfL
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E(%@@PA7,m4|P[
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E%@@PA7,m4|P%! Gp|GRBm5XTC;x(L>d0$Nhrt"~
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+i&eQE[{@gA7,mP4|P_(}U8gjQ~XG#5jMOnb{
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E(%@@PA7,m4|P[*
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&E%@@2PA7,m4|Png{(R{we~7?Qb:V*bmVC-!@T+$<LsL!&0jO/NK;c`Jc{Iga2Tn2`UIR||?4nc*<D6}:*Dx{o-u^Uc9D/&PnAc'og\aDWsUHs$j}bVu=q,){HrQj5s\&G/crM\JetT{!:Kextql5!_JZ>CmbV~z\P~$Qz=n}['p^CrRlC#k$ZK3=sQe9 WeOqJZftc'O@+G/{no]5C#6dMxN2=ql!~$L_r=c&gC?j>{a_alvb+@|,C|gT+4"stb_\[XNO!B<5Y#LpXXi32fv()6sw&hXcQ95l?l|u"KUcxqXj(>gjbZ[l}CT}4H"K@>Ap^<87aQ#TZK1Uv3W}dEK4f_n)I<f=c*XA`34og'g!bstn)K/qf9`0N^<_I'ZMd?AxYf|fsM7Fb2YO ew?Ld=c0} o3Qty$)Y^6~:[]</h'<5_wch^b?OR]f%1uvfw$T
+[DETECTION Module - [36mINFO[0m - 20:22:33] Ether
+#i&Eb%@@PA7,m4PP$BDXf$IATNK8[="/0tMWu%8[`tvryn'Ea_S7U[,9hGvlf7iW2b3")k:HI%dara]r},`!H*7t9U)2t?h@"F:x?IO?%`$;ue({$'R[-y/>4W95Ve2\UH{CrFtnp^rltI,+nqBRv$J$d)78:B0E}i_#gk;n);}X"@WB<}8J*62[OLwpSj\2B4t@b\=Xb2lytl2q2Q
+[DETECTION Module - [36mINFO[0m - 20:22:34] Ether
+i&eQE4{@fA7,mP4|44
+[DETECTION Module - [36mINFO[0m - 20:22:34] Ether
+i&eQE({@gA7,mP4PR
+[DETECTION Module - [36mINFO[0m - 20:22:34] Ether
+i&eQEb{@gA7,mP4P5+|1{"7xWU-j,x( Pa5%NDn/^!z?cel4%=6BWjuw8XhWwN4h&d=>M~y- ^%6+@j(gec6w+H;I!h +qUi22?[J6r}8L(AO1D;`yt
+[DETECTION Module - [36mINFO[0m - 20:22:34] Ether
+#i&EG%@@PA7,m49P\p]:~TO_
+[DETECTION Module - [36mINFO[0m - 20:22:34] Ether
+#i&E(%@@PA7,m49PR
+[DETECTION Module - [36mINFO[0m - 20:22:34] Ether
+i&eQE({@gA7,mP94PP
