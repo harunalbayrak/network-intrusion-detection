@@ -81,7 +81,7 @@ class RuleParser:
         metadata = ""
         for y in rule.options:
             if y.name == "content":
-                y.value = y.value.replace('"', '').replace('|', '').replace(' ','').replace('.','').lower()
+                y.value = y.value.replace('"', '').replace(' ','').replace('|', ' ').replace('.','').lower()
                 # string += f'{y.name}: {y.value}\n'
                 contents.append(y.value)
             elif y.name == "msg":

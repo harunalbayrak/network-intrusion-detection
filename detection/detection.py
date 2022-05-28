@@ -51,9 +51,14 @@ class Detection():
         self.logger.print_log_info("Queue Processing...")
         data = self.layercapture.removeContentFromQueue()
         for i in range(len(self.contents)):
-            if data in str(self.contents[i]):
-                print(data + " - !Found! - " + str(i) + " - " + str(self.contents[i]))
-                break
+            _contentsList = str(self.contents[i]).split(" ")
+            # self.logger.print_log_info(_contentsList)
+            for j in _contentsList:
+                j = j.replace('(','').replace(')','').replace(',','').replace('\'','')
+                # self.logger.print_log_info(j)
+                if j in data and j != '' and len(j) > 3:
+                    print(data + " - !Found! - " + str(i) + " - " + j)
+                    break
 
     def analyse_packet(self,pkt):
         if(pkt.haslayer(scapy.Ether)):
