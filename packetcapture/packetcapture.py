@@ -2,12 +2,12 @@ import os
 import sys
 import scapy.all as scapy
 from textwrap import wrap
-from layercapture import LayerCapture
 from scapy.layers.http import *
 
 # Append parent directory to import path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from logger.logger import Logger
+from packetcapture.layercapture import LayerCapture
 
 class PacketCapture:
     def __init__(self,interface,layercapture):
@@ -20,17 +20,27 @@ class PacketCapture:
         # self.layercapture.capture_ip(pkt["IP"])
         # self.layercapture.capture_ipv6(pkt["IPv6"])
         # self.layercapture.capture_ipv6(pkt["Ether"])
-        # self.layercapture.capture_udp(pkt["UDP"])
-        self.layercapture.capture_tcp(pkt["TCP"])
         # self.layercapture.capture_raw(pkt["Raw"])
-        # self.layercapture.capture_dns(pkt["DNS"])
-        # self.layercapture.capture_icmp(pkt["ICMP"])
-        # self.layercapture.capture_arp(pkt["ARP"])
         # self.layercapture.capture_tls(pkt["TLS Application Data"])
+
+        if(pkt.haslayer(scapy.UDP)):
+            self.logger.print_log_info("UDP")
+            # self.layercapture.capture_udp(pkt["UDP"])
+        if(pkt.haslayer(scapy.TCP)):
+            self.logger.print_log_info("TCP")
+            # self.layercapture.capture_tcp(pkt["TCP"])
+        if(pkt.haslayer(scapy.DNS)):
+            self.logger.print_log_info("DNS")
+            # self.layercapture.capture_dns(pkt["DNS"])
+        if(pkt.haslayer(scapy.ICMP)):
+            self.logger.print_log_info("ICMP")
+            # self.layercapture.capture_icmp(pkt["ICMP"])
+        if(pkt.haslayer(scapy.ARP)):
+            self.logger.print_log_info("ARP")
+            # self.layercapture.capture_arp(pkt["ARP"])
 
         # print(pkt["UDP"].load)
         # print(pkt["ICMP"].show())
-        pass
 
     def sniffing(self):
         # scapy.load_layer("tls")
@@ -62,6 +72,8 @@ class PacketCapture:
             print(e)
             pass
 
-layercapture = LayerCapture()
-packetcapture = PacketCapture("wlo1",layercapture)
-packetcapture.sniffing()
+    @staticmethod
+    def packet_sniffing():
+        layercapture = LayerCapture()
+        packetcapture = PacketCapture("wlo1",layercapture)
+        packetcapture.sniffing()

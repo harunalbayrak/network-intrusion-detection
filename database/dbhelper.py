@@ -69,6 +69,26 @@ class DBHelper:
         self.cursor.execute(dbquery.get_insert_query(tables["alerts"]),alert.to_tuple())
         self.conn.commit()
 
+    def select_rules(self):
+        self.cursor.execute(dbquery.get_select_query(tables["rules"]))
+        records = self.cursor.fetchall()
+        return records
+
+    def select_rules_only_contents(self):
+        self.cursor.execute(dbquery.select_rules_table_only_contents)
+        records = self.cursor.fetchall()
+        return records
+
+    def select_rules_only_protocol(self):
+        self.cursor.execute(dbquery.select_rules_table_only_protocol)
+        records = self.cursor.fetchall()
+        return records
+
+    def select_rules_only_src_dest(self):
+        self.cursor.execute(dbquery.select_rules_table_only_src_dest)
+        records = self.cursor.fetchall()
+        return records
+
     def __del__(self):
         # Closing the connection
         self.conn.close()

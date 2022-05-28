@@ -24,8 +24,9 @@ class LayerCapture:
     def capture_udp(self,udp_pkt):
         # PacketCapture.capture_raw(udp_pkt["Raw"])
         # print(udp_pkt.show())
-        print(udp_pkt.payload)
+        # print(udp_pkt.payload)
         # print(binascii.hexlify(str(udp_pkt.payload)))
+        print(bytes(udp_pkt.payload).hex())
         pass
 
     def capture_tcp(self,tcp_pkt):
