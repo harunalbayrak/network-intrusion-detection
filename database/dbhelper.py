@@ -84,7 +84,7 @@ class DBHelper:
         records = self.cursor.fetchall()
         return records
 
-    def select_rules_only_src_dest(self):
+    def select_rules_only_src_dst(self):
         self.cursor.execute(dbquery.select_rules_table_only_src_dest)
         records = self.cursor.fetchall()
         return records

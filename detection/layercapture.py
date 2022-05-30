@@ -9,7 +9,7 @@ class LayerCapture:
         self.contentsQueue = deque()
 
     def addContentToQueue(self,content):
-        if(self.isNotBlank(content)):
+        if(self.isNotBlank(content["data"])):
             self.contentsQueue.append(content)
 
     def removeContentFromQueue(self):
@@ -40,8 +40,26 @@ class LayerCapture:
             start = end + 56
             end = start + 16
 
-        print(string.replace('.',''))
-        self.addContentToQueue(string.replace('.',''))
+        # print(string.replace('.',''))
+        data = string.replace('.','')
+        ip_src=ether_pkt["IP"].src
+        ip_dst=ether_pkt["IP"].dst
+        port_src=ether_pkt["IP"].sport
+        port_dst=ether_pkt["IP"].dport
+        protocol=ether_pkt["IP"].proto
+        tcp_data = ""
+        udp_data = ""
+
+        if(protocol == 6):
+            tcp_data = bytes(ether_pkt["TCP"].payload).hex()
+        elif(protocol == 17):
+            udp_data = bytes(ether_pkt["UDP"].payload).hex()
+
+        q = {"data":data, "tcp_data": tcp_data, "udp_data":udp_data, "ip_src":ip_src, "ip_dst":ip_dst, "port_src":port_src, "port_dst":port_dst, "protocol":protocol}
+        self.addContentToQueue(q)
+
+        # print(ether_pkt.summary())
+        # print(ether_pkt.show())
 
         pass
 
@@ -79,9 +97,15 @@ class LayerCapture:
         # hh_list = hh.replace('.','').split(' ')
         # print(linehexdump(tcp_pkt, dump=True))
         # print(hh_list[len(hh_list)-1])
-        # hex_payload = bytes(tcp_pkt.payload).hex()
-        # # print(hex_payload)
-        # self.addContentToQueue(hex_payload)
+        data = bytes(tcp_pkt.payload).hex()
+
+        port_src=tcp_pkt.sport
+        port_dst=tcp_pkt.dport
+
+        q = {"data":data, "ip_src":0, "ip_dst":0, "port_src":port_src, "port_dst":port_dst, "protocol":6}
+
+        self.addContentToQueue(q)
+
         pass
 
     def capture_raw(self,raw_pkt):

@@ -106,7 +106,7 @@ class RuleParser:
             dbHelper.insert_rule(rule_object)
 
 if __name__ == "__main__":
-    parser = RuleParser("rules/emerging-all-snort.rules",True)
+    parser = RuleParser("rules/deneme.rules",True)
     print(parser)
 
     # parser.logger.print_log_info("Heyyyy")
