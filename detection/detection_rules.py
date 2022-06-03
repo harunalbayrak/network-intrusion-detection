@@ -95,8 +95,11 @@ class DetectionRules:
 
     def checkContent(self,i,data,_contentsList,protocol,tcp_data,udp_data):
         flag = 0
+
+        # print(_contentsList)
         for j in _contentsList:
             if(j == ''):
+                flag = flag + 1
                 continue
 
             pattern = "[0-9a-f]+"
@@ -119,8 +122,11 @@ class DetectionRules:
                     flag = flag + 1
                     continue
         
+        # if(flag != 0):
+            # print(f"Flag: {flag} - {len(_contentsList)}, {_contentsList}")
         if(flag == len(_contentsList)):
-            if(flag == 1 and len(j) > 3):
+            if(flag > 2):
+                # print(f"Flag: {flag} - {len(_contentsList)}, {_contentsList}")
                 return 0
             elif(flag != 1):
                 return 0

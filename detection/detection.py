@@ -55,6 +55,15 @@ class Detection():
     def isNotBlank(self,myString):
         return bool(myString and myString.strip())
 
+    def selectProtocol(self,protocol):
+        match protocol:
+            case 1:
+                return "icmp"
+            case 6:
+                return "tcp"
+            case 17:
+                return "udp"
+
     def compareContents(self):
         self.logger.print_log_info("Queue Processing...")
         q = self.layercapture.removeContentFromQueue()
@@ -66,14 +75,7 @@ class Detection():
         protocol = q['protocol']
         tcp_data = q['tcp_data']
         udp_data = q['udp_data']
-   
-        _protocol = ""
-        if(protocol == 1):
-            _protocol = "icmp"
-        elif(protocol == 6):
-            _protocol = "tcp"
-        elif(protocol == 17):
-            _protocol = "udp"
+        _protocol = self.selectProtocol(protocol)
 
         for i in range(len(self.contents)):
             _contentsList = str(self.contents[i][0]).split(" ")

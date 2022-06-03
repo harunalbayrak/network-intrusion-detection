@@ -28,17 +28,25 @@ select_rules_table_only_protocol = "SELECT protocol FROM RULES"
 select_rules_table_only_src_dest = "SELECT source_ip, source_port, destination_ip, destination_port FROM RULES"
 
 create_alerts_table = """CREATE TABLE ALERTS(
-                        publisher_id SERIAL PRIMARY KEY,
-                        publisher_name VARCHAR(255) NOT NULL,
-                        publisher_estd INT,
-                        publsiher_location VARCHAR(255),
-                        publsiher_type VARCHAR(255))"""
+                        ID SERIAL PRIMARY KEY,
+                        TIME VARCHAR(20) NOT NULL,
+                        PRIORITY VARCHAR(20) NOT NULL,
+                        SID VARCHAR(20) NOT NULL,
+                        PROTOCOL VARCHAR(20) NOT NULL,
+                        SOURCE_IP VARCHAR(30) NOT NULL,
+                        SOURCE_PORT VARCHAR(10) NOT NULL,
+                        DESTINATION_IP VARCHAR(30) NOT NULL,
+                        DESTINATION_PORT VARCHAR(10) NOT NULL,
+                        MESSAGE VARCHAR(255),
+                        CONTENTS VARCHAR(2000),
+                        CLASS_TYPE VARCHAR(80),
+                        METADATA VARCHAR(500))"""
 
-insert_alerts_table = """INSERT INTO ALERTS(
-                        publisher_id, publisher_name, publisher_estd,
-                        publsiher_location, publsiher_type)
-                        VALUES (%s,%s,%s,%s,%s)"""
-                    
+insert_alerts_table = """INSERT INTO RULES(
+                        TIME, PRIORITY, ID, SID, PROTOCOL, SOURCE_IP, SOURCE_PORT,
+                        DESTINATION_IP, DESTINATION_PORT, MESSAGE, CONTENTS, CLASS_TYPE, METADATA)
+                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+
 select_alerts_table = "SELECT * FROM ALERTS"
 
 def get_create_query(i):

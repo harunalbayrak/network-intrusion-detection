@@ -5,9 +5,11 @@ from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.alert import Alert
+from database.dbhelper import DBHelper
 
 class DetectionAlert:
     def __init__(self):
+        self.dbHelper = DBHelper()
         self.alerts = []
         self.time_limit = 60.0
         pass
@@ -34,4 +36,8 @@ class DetectionAlert:
 
         if(self.checkIsAddable(_alert)):
             self.alerts.append(_alert)
+            self.insert_alert_db(alert)
             print(alert)
+            
+    def insert_alert_db(self,alert):
+        self.dbHelper.insert_alert(alert)

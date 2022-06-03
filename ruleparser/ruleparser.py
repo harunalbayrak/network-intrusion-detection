@@ -83,7 +83,8 @@ class RuleParser:
             if y.name == "content":
                 y.value = y.value.replace('"', '').replace(' ','').replace('|', ' ').replace('.','').lower()
                 # string += f'{y.name}: {y.value}\n'
-                contents.append(y.value)
+                if(y.value != ''):
+                    contents.append(y.value)
             elif y.name == "msg":
                 message = y.value
             elif y.name == "classtype":
