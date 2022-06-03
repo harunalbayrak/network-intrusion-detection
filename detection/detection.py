@@ -1,12 +1,11 @@
 import os
 import sys
-import re
-import time
-from datetime import datetime
-from collections import deque
+
 from layercapture import LayerCapture
 import scapy.all as scapy
 from scapy.layers.http import *
+from detection_rules import DetectionRules
+from detection_alert import DetectionAlert
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from database.dbhelper import DBHelper
@@ -21,6 +20,8 @@ class Detection():
         self.layercapture = LayerCapture()
         self.logger = Logger("DETECTION")
         self.setRulesFromDB()
+        self.detectionRules = DetectionRules(self.src_dst)
+        self.detectionAlert = DetectionAlert()
 
     def getRulesFromDB(self,q):
         dbHelper = DBHelper()
@@ -67,7 +68,6 @@ class Detection():
         udp_data = q['udp_data']
    
         _protocol = ""
-
         if(protocol == 1):
             _protocol = "icmp"
         elif(protocol == 6):
@@ -75,121 +75,14 @@ class Detection():
         elif(protocol == 17):
             _protocol = "udp"
 
-        # print(ip_src)
-
         for i in range(len(self.contents)):
-            nocontent = 0
-            if(len(self.contents[i][0]) == 0):
-                nocontent = 1
-
             _contentsList = str(self.contents[i][0]).split(" ")
             if(self.protocol[i][0] != _protocol):
                 continue
             
-            if(self.src_dst[i][0] == "$HOME_NET"): # src ip
-                ip_src_list = ip_src.split('.')
-                # print(ip_src_list)
-                if(ip_src_list[0] != 10 and ip_src_list[0] != 172 and ip_src_list[0] != 192):
-                    continue
-                if(ip_src_list[0] == 172 and not (ip_src_list[1] >= 16 and ip_src_list[1] <= 31)):
-                    continue
-                if(ip_src_list[0] == 192 and not (ip_src_list[1] == 168)):
-                    continue
-            
-            if(self.src_dst[i][0] == "$EXTERNAL_NET"): # src ip
-                ip_src_list = ip_src.split('.')
-                if(ip_src_list[0] == 10 or ip_src_list[0] == 172 or ip_src_list[0] == 192):
-                    continue
-                if(ip_src_list[0] == 172 and (ip_src_list[1] >= 16 and ip_src_list[1] <= 31)):
-                    continue
-                if(ip_src_list[0] == 192 and (ip_src_list[1] == 168)):
-                    continue
-
-            if(self.src_dst[i][0][0] == '['): # src ip
-                _src_dst = self.src_dst[i][0].replace('[','').replace(']','') 
-                ip_src_list = _src_dst.split(',')
-                for ip_src_x in ip_src_list:
-                    if(ip_src_x == ip_src):
-                        now = datetime.now()
-                        current_time = now.strftime("%H:%M:%S")
-                        alert = Alert(current_time,"High",self.all_rules[i][0],self.all_rules[i][2],self.all_rules[i][3],ip_src,port_src,ip_dst,port_dst,self.all_rules[i][8],self.all_rules[i][9],self.all_rules[i][10],self.all_rules[i][11])
-                        # print(f"Found: {ip_src}")
-                        print(alert)
-                        break
-
-
-            if(self.src_dst[i][2] == "$HOME_NET"): # dst ip
-                ip_dst_list = ip_dst.split('.')
-                # print(ip_src_list)
-                if(ip_dst_list[0] != 10 and ip_dst_list[0] != 172 and ip_dst_list[0] != 192):
-                    continue
-                if(ip_dst_list[0] == 172 and not (ip_dst_list[1] >= 16 and ip_dst_list[1] <= 31)):
-                    continue
-                if(ip_dst_list[0] == 192 and not (ip_dst_list[1] == 168)):
-                    continue
-            
-            if(self.src_dst[i][2] == "$EXTERNAL_NET"): # dst ip
-                ip_dst_list = ip_dst.split('.')
-                if(ip_dst_list[0] == 10 or ip_dst_list[0] == 172 or ip_dst_list[0] == 192):
-                    continue
-                if(ip_dst_list[0] == 172 and (ip_dst_list[1] >= 16 and ip_dst_list[1] <= 31)):
-                    continue
-                if(ip_dst_list[0] == 192 and (ip_dst_list[1] == 168)):
-                    continue
-            
-            if(self.src_dst[i][1] == "$HTTP_PORTS"): # src port
-                if(port_src != 80 and port_src != 443):
-                    continue
-
-            if(self.src_dst[i][1].isnumeric()): # src port
-                if(int(self.src_dst[i][1]) != port_src):
-                    continue
-
-            if(self.src_dst[i][3] == "$HTTP_PORTS"): # dst port
-                if(port_dst != 80 and port_dst != 443):
-                    continue
-
-            if(self.src_dst[i][3].isnumeric()): # dst port
-                if(int(self.src_dst[i][3]) != port_dst):
-                    continue
-
-            # self.logger.print_log_info(len(_contentsList))
-            flag = 0
-            if(nocontent == 0):
-                for j in _contentsList:
-                    if(j == ''):
-                        continue
-                    # self.logger.print_log_info(j)
-
-                    pattern = "[0-9a-f]+"
-                    result = re.fullmatch(pattern, j)
-                    if result:
-                        isHexadecimal = 1
-                    else:
-                        isHexadecimal = 0	
-
-                    if(isHexadecimal == 0):
-                        # self.logger.print_log_info(j)
-                        if j in data:
-                            flag = flag + 1
-                            continue
-
-                    if(isHexadecimal == 1):
-                        # self.logger.print_log_info(j)
-                        if protocol == 6 and j in tcp_data:
-                            flag = flag + 1
-                            continue
-                        if protocol == 17 and j in udp_data:
-                            flag = flag + 1
-                            continue
-                
-                if(flag == len(_contentsList)):
-                    if(flag == 1 and len(j) > 3):
-                        print(data + " - !Found! - " + str(i) + " - " + j)
-                    elif(flag != 1):
-                        print(data + " - !Found! - " + str(i) + " - " + j)
-            else:
-                pass
+            res = self.detectionRules.checkAll(i,self.contents[i],data,_contentsList,protocol,tcp_data,udp_data,ip_src,ip_dst,port_src,port_dst)
+            if(res == 0):
+                self.detectionAlert.createAlert(self.all_rules[i],ip_src,ip_dst,port_src,port_dst)
 
 
     def analyse_packet(self,pkt):
