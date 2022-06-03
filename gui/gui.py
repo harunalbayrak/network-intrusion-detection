@@ -44,6 +44,7 @@ def index(request: Request):
 @app.get("/dashboard",response_class=HTMLResponse)
 def index(request: Request, db:dbhelper.Session = Depends(get_db)):
     rules = db.query(Rule).all()
+    alerts = db.query(Alert).all()
     dashboard_card_values[2] = len(rules)
     return templates.TemplateResponse("pages/dashboard.html",{"request": request,"name":"Dashboard", "dashboard_card_names": dashboard_card_names, "dashboard_card_values":dashboard_card_values, "dashboard_card_icons": dashboard_card_icons, "alerts": alerts, "rules": rules})
 

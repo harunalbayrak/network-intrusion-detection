@@ -42,10 +42,10 @@ create_alerts_table = """CREATE TABLE ALERTS(
                         CLASS_TYPE VARCHAR(80),
                         METADATA VARCHAR(500))"""
 
-insert_alerts_table = """INSERT INTO RULES(
-                        TIME, PRIORITY, ID, SID, PROTOCOL, SOURCE_IP, SOURCE_PORT,
+insert_alerts_table = """INSERT INTO ALERTS(
+                        TIME, PRIORITY, SID, PROTOCOL, SOURCE_IP, SOURCE_PORT,
                         DESTINATION_IP, DESTINATION_PORT, MESSAGE, CONTENTS, CLASS_TYPE, METADATA)
-                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
 
 select_alerts_table = "SELECT * FROM ALERTS"
 

@@ -11,7 +11,7 @@ class DetectionAlert:
     def __init__(self):
         self.dbHelper = DBHelper()
         self.alerts = []
-        self.time_limit = 60.0
+        self.time_limit = 120.0
         pass
 
     def checkIsAddable(self,alert2):
@@ -31,7 +31,7 @@ class DetectionAlert:
     def createAlert(self,rule,ip_src,ip_dst,port_src,port_dst):
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
-        alert = Alert(current_time,"High",rule[0],rule[2],rule[3],ip_src,port_src,ip_dst,port_dst,rule[8],rule[9],rule[10],rule[11])
+        alert = Alert(current_time,"High",rule[2],rule[3],ip_src,port_src,ip_dst,port_dst,rule[8],rule[9],rule[10],rule[11])
         _alert = {"alert":alert, "time": time.time()}
 
         if(self.checkIsAddable(_alert)):
