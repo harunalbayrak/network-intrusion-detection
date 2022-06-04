@@ -1,7 +1,7 @@
 import os
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, date
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.alert import Alert
@@ -31,7 +31,8 @@ class DetectionAlert:
     def createAlert(self,rule,ip_src,ip_dst,port_src,port_dst):
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
-        alert = Alert(current_time,"High",rule[2],rule[3],ip_src,port_src,ip_dst,port_dst,rule[8],rule[9],rule[10],rule[11])
+        current_day = date.today()
+        alert = Alert(current_time,current_day,"High",rule[2],rule[3],ip_src,port_src,ip_dst,port_dst,rule[8],rule[9],rule[10],rule[11])
         _alert = {"alert":alert, "time": time.time()}
 
         if(self.checkIsAddable(_alert)):

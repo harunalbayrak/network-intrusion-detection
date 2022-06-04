@@ -12,6 +12,7 @@ class Alert(Base):
     __tablename__ = "alerts"
     id = _sql.Column(_sql.Integer, primary_key=True, index=True)
     time = _sql.Column(_sql.String, index=True)
+    day = _sql.Column(_sql.String, index=True)
     priority = _sql.Column(_sql.String, index=True)
     sid = _sql.Column(_sql.String, index=True)
     protocol = _sql.Column(_sql.String, index=True)
@@ -24,8 +25,9 @@ class Alert(Base):
     class_type = _sql.Column(_sql.String, index=True)
     _metadata = _sql.Column("metadata", _sql.String)
 
-    def __init__(self,time,priority,sid,protocol,source_ip,source_port,destination_ip,destination_port,message,contents,class_type,metadata):
+    def __init__(self,time,day,priority,sid,protocol,source_ip,source_port,destination_ip,destination_port,message,contents,class_type,metadata):
         self.time = time
+        self.day = day
         self.priority = priority
         self.sid = sid
         self.protocol = protocol
@@ -51,4 +53,4 @@ class Alert(Base):
         return _string
 
     def to_tuple(self):
-        return (self.time, self.priority, self.sid, self.protocol, self.source_ip, self.source_port, self.destination_ip, self.destination_port, self.message, self.contents, self.class_type, self.metadata)
+        return (self.time, self.day, self.priority, self.sid, self.protocol, self.source_ip, self.source_port, self.destination_ip, self.destination_port, self.message, self.contents, self.class_type, self.metadata)

@@ -30,6 +30,7 @@ select_rules_table_only_src_dest = "SELECT source_ip, source_port, destination_i
 create_alerts_table = """CREATE TABLE ALERTS(
                         ID SERIAL PRIMARY KEY,
                         TIME VARCHAR(20) NOT NULL,
+                        DAY VARCHAR(20) NOT NULL,
                         PRIORITY VARCHAR(20) NOT NULL,
                         SID VARCHAR(20) NOT NULL,
                         PROTOCOL VARCHAR(20) NOT NULL,
@@ -43,9 +44,9 @@ create_alerts_table = """CREATE TABLE ALERTS(
                         METADATA VARCHAR(500))"""
 
 insert_alerts_table = """INSERT INTO ALERTS(
-                        TIME, PRIORITY, SID, PROTOCOL, SOURCE_IP, SOURCE_PORT,
+                        TIME, DAY, PRIORITY, SID, PROTOCOL, SOURCE_IP, SOURCE_PORT,
                         DESTINATION_IP, DESTINATION_PORT, MESSAGE, CONTENTS, CLASS_TYPE, METADATA)
-                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
 
 select_alerts_table = "SELECT * FROM ALERTS"
 

@@ -1,7 +1,9 @@
 import os
 import sys
+import math
+from datetime import date
 from fastapi import Depends, FastAPI, Body, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import dbhelper
@@ -37,15 +39,19 @@ def get_db():
     finally:
         db.close()
 
-@app.get("/",response_class=HTMLResponse)
+@app.get("/",response_class=RedirectResponse)
 def index(request: Request):
-    return templates.TemplateResponse("pages/dashboard.html",{"request": request, "name":"Dashboard"})
+    return RedirectResponse(url="/dashboard")
 
 @app.get("/dashboard",response_class=HTMLResponse)
 def index(request: Request, db:dbhelper.Session = Depends(get_db)):
     rules = db.query(Rule).all()
     alerts = db.query(Alert).all()
+    current_day = str(date.today())
+    today_alerts = db.query(Alert).filter(Alert.day == current_day).all()
     dashboard_card_values[2] = len(rules)
+    dashboard_card_values[1] = len(alerts)
+    dashboard_card_values[0] = len(today_alerts)
     return templates.TemplateResponse("pages/dashboard.html",{"request": request,"name":"Dashboard", "dashboard_card_names": dashboard_card_names, "dashboard_card_values":dashboard_card_values, "dashboard_card_icons": dashboard_card_icons, "alerts": alerts, "rules": rules})
 
 @app.get("/rules", response_class=HTMLResponse)
@@ -53,14 +59,20 @@ def index(request: Request, db:dbhelper.Session = Depends(get_db), page: int = 1
     start = (page - 1) * 10
     end = start + 10
     rules = db.query(Rule).all()
-    last = int(len(rules) / 10)
+    last = math.ceil(len(rules) / 10)
     rules = rules[start:end]
-    return templates.TemplateResponse("pages/rules.html",{"request": request,"name":"Rules", "rules": rules, "page":page, "last": last})
+    return templates.TemplateResponse("pages/rules.html",{"request": request,"name":"Rules", "rules": rules, "last": last, "page": page})
 
 @app.get("/alerts",response_class=HTMLResponse)
-def index(request: Request):
-    return templates.TemplateResponse("pages/alerts.html",{"request": request,"name":"Alerts"})
-    # return templates.TemplateResponse("pages/alerts.html",{"request": request,"name":"Alerts", "alerts": alerts})
+def index(request: Request, db:dbhelper.Session = Depends(get_db), page: int = 1):
+    alerts = db.query(Alert).all()
+    start = len(alerts) - ((page - 1) * 10)
+    end = start - 10
+    if(end < 0):
+        end = 0
+    last = math.ceil(len(alerts) / 10)
+    alerts = alerts[end:start]
+    return templates.TemplateResponse("pages/alerts.html",{"request": request,"name":"Alerts", "alerts": alerts, "last": last, "page": page})
 
 @app.get("/network",response_class=HTMLResponse)
 def index(request: Request):
