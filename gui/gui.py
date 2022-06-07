@@ -25,6 +25,10 @@ app.mount("/static", StaticFiles(directory="src"), name="static")
 # Jinja2 template directory
 templates = Jinja2Templates(directory="src")
 
+daily_alert_counts = [90, 39, 40, 52, 20, 15, 28]
+total_alerts = [20, 59, 89, 141, 161, 176, 204]
+total_rules = [20000, 20002, 19996, 20007, 20014, 20022, 20022, 20030, 20035, 20020, 20020, 20022]
+priority_levels = [0,0,0]
 dashboard_card_icons = ["error","error","graphic_eq","person"]
 dashboard_card_names = ["Today's Alerts","Total Alerts","Total Rules","Total Users"]
 dashboard_card_values = [3,392,20000,2]
@@ -45,14 +49,24 @@ def index(request: Request):
 
 @app.get("/dashboard",response_class=HTMLResponse)
 def index(request: Request, db:dbhelper.Session = Depends(get_db)):
+    current_day = str(date.today())
+    # week_day = date.weekday()
+
     rules = db.query(Rule).all()
     alerts = db.query(Alert).all()
-    current_day = str(date.today())
     today_alerts = db.query(Alert).filter(Alert.day == current_day).all()
     dashboard_card_values[2] = len(rules)
     dashboard_card_values[1] = len(alerts)
     dashboard_card_values[0] = len(today_alerts)
-    return templates.TemplateResponse("pages/dashboard.html",{"request": request,"name":"Dashboard", "dashboard_card_names": dashboard_card_names, "dashboard_card_values":dashboard_card_values, "dashboard_card_icons": dashboard_card_icons, "alerts": alerts, "rules": rules})
+
+    low_priorities = db.query(Alert).filter(Alert.priority == "Low").all()
+    medium_priorities = db.query(Alert).filter(Alert.priority == "Medium").all()
+    high_priorities = db.query(Alert).filter(Alert.priority == "High").all()
+    priority_levels[0] = len(low_priorities)
+    priority_levels[1] = len(medium_priorities)
+    priority_levels[2] = len(high_priorities)
+
+    return templates.TemplateResponse("pages/dashboard.html",{"request": request,"name":"Dashboard", "dashboard_card_names": dashboard_card_names, "dashboard_card_values":dashboard_card_values, "dashboard_card_icons": dashboard_card_icons, "priority_levels":priority_levels, "daily_alert_counts": daily_alert_counts, "total_alerts": total_alerts, "total_rules": total_rules, "alerts": alerts, "rules": rules})
 
 @app.get("/rules", response_class=HTMLResponse)
 def index(request: Request, db:dbhelper.Session = Depends(get_db), page: int = 1):

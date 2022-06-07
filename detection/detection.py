@@ -1,5 +1,7 @@
 import os
 import sys
+import requests
+import json
 
 from layercapture import LayerCapture
 import scapy.all as scapy
@@ -76,6 +78,13 @@ class Detection():
         tcp_data = q['tcp_data']
         udp_data = q['udp_data']
         _protocol = self.selectProtocol(protocol)
+
+        request_url = 'https://geolocation-db.com/jsonp/' + ip_src
+        response = requests.get(request_url)
+        result = response.content.decode()
+        result = result.split("(")[1].strip(")")
+        result  = json.loads(result)
+        print(result)
 
         for i in range(len(self.contents)):
             _contentsList = str(self.contents[i][0]).split(" ")
