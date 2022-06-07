@@ -122,6 +122,8 @@ insert_dashboard_weekday_statistics_table = """INSERT INTO DASHBOARD_WEEKDAY_STA
 
 select_dashboard_weekday_statistics_table = "SELECT * FROM DASHBOARD_WEEKDAY_STATISTICS"
 
+select_dashboard_weekday_statistics_table_2 = "SELECT COUNT FROM DASHBOARD_WEEKDAY_STATISTICS WHERE WEEKDAY = %s"
+
 update_dashboard_weekday_statistics_table = """UPDATE DASHBOARD_WEEKDAY_STATISTICS SET COUNT = %s WHERE WEEKDAY = %s"""
 
 # DASHBOARD_RULE_STATISTICS

@@ -78,6 +78,9 @@ class DashboardWeekdayStatistics(Base):
     def to_tuple(self):
         return (self.weekday, self.count)
 
+    def to_tuple2(self):
+        return (self.count, self.weekday)
+        
 class DashboardRuleStatistics(Base):
     __tablename__ = "dashboard_rule_statistics"
     month_number = _sql.Column(_sql.Integer, primary_key=True, index=True)

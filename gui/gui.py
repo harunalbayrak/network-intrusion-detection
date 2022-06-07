@@ -1,7 +1,7 @@
 import os
 import sys
 import math
-from datetime import date
+from datetime import date, datetime
 from fastapi import Depends, FastAPI, Body, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
@@ -12,7 +12,7 @@ import dbhelper
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.rule import Rule
 from models.alert import Alert
-from models.statistics import IPStatistics, PortStatistics, ProtocolStatistics
+from models.statistics import IPStatistics, PortStatistics, ProtocolStatistics, DashboardWeekdayStatistics
 from logger.logger import Logger
 
 # Initiliaze
@@ -66,7 +66,17 @@ def index(request: Request):
 @app.get("/dashboard",response_class=HTMLResponse)
 def index(request: Request, db:dbhelper.Session = Depends(get_db)):
     current_day = str(date.today())
-    # week_day = date.weekday()
+    weekday = datetime.today().weekday()
+
+    total = 0
+    for i in range(0,7):
+        try:
+            daily_alert_counts[i] = db.query(DashboardWeekdayStatistics).filter(DashboardWeekdayStatistics.weekday == i).one().count
+            total = total + daily_alert_counts[i]
+            total_alerts[i] = total
+        except:
+            daily_alert_counts[i] = 0
+            total_alerts[i] = total
 
     rules = db.query(Rule).all()
     alerts = db.query(Alert).all()
@@ -74,6 +84,9 @@ def index(request: Request, db:dbhelper.Session = Depends(get_db)):
     dashboard_card_values[2] = len(rules)
     dashboard_card_values[1] = len(alerts)
     dashboard_card_values[0] = len(today_alerts)
+
+    for i in range(0,12):
+        total_rules[i] = len(rules)
 
     low_priorities = db.query(Alert).filter(Alert.priority == "Low").all()
     medium_priorities = db.query(Alert).filter(Alert.priority == "Medium").all()

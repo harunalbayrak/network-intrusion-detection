@@ -98,11 +98,14 @@ class DBHelper:
         records = self.cursor.fetchall()
         return records
 
+    def select_weekday(self, weekday):
+        self.cursor.execute(dbquery.select_dashboard_weekday_statistics_table_2,str(weekday))
+        record = self.cursor.fetchone()
+        return record
+
     def update_statistics(self, num, statistics):
         self.cursor.execute(dbquery.get_update_query(num),statistics)
         self.conn.commit()
-        count = self.cursor.rowcount
-        return count
 
     def __del__(self):
         # Closing the connection

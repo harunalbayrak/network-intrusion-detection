@@ -5,6 +5,7 @@ from datetime import datetime, date
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.alert import Alert
+from models.statistics import DashboardWeekdayStatistics
 from database.dbhelper import DBHelper
 
 class DetectionAlert:
@@ -59,6 +60,18 @@ class DetectionAlert:
             self.alerts.append(_alert)
             self.insert_alert_db(alert)
             print(alert)
+            
+            weekday = datetime.today().weekday()
+            record = self.dbHelper.select_weekday(weekday)
+            print(record[0])
+
+            stat = DashboardWeekdayStatistics(weekday,str(record[0]+1))
+            self.dbHelper.update_statistics(6,stat.to_tuple2())
+
+            # try:
+                # self.dbHelper.insert_statistics(6,stat)
+            # except:
+                # self.dbHelper.update_statistics(6,stat.to_tuple2())
             
     def insert_alert_db(self,alert):
         self.dbHelper.insert_alert(alert)
