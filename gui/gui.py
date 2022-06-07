@@ -12,6 +12,7 @@ import dbhelper
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.rule import Rule
 from models.alert import Alert
+from models.statistics import IPStatistics, PortStatistics, ProtocolStatistics
 from logger.logger import Logger
 
 # Initiliaze
@@ -32,6 +33,21 @@ priority_levels = [0,0,0]
 dashboard_card_icons = ["error","error","graphic_eq","person"]
 dashboard_card_names = ["Today's Alerts","Total Alerts","Total Rules","Total Users"]
 dashboard_card_values = [3,392,20000,2]
+
+top_source_ips_key = ["","","","","","","",""]
+top_source_ips_value = [0,0,0,0,0,0,0,0]
+
+top_destination_ips_key = ["","","","","","","",""]
+top_destination_ips_value = [0,0,0,0,0,0,0,0]
+
+top_source_ports_key = ["","","","","","","",""]
+top_source_ports_value = [0,0,0,0,0,0,0,0]
+
+top_destination_ports_key = ["","","","","","","",""]
+top_destination_ports_value = [0,0,0,0,0,0,0,0]
+
+top_protocols_key = ["","","","","","","",""]
+top_protocols_value = [0,0,0,0,0,0,0,0]
 
 # rules = [Rule("alert",2009248,"tcp","ET SHELLCODE Lindau (linkbot) xor Decoder Shellcode"),Rule("alert",26075,"tcp","MALWARE-CNC Win.Trojan.Zbot variant in.php outbound connection"),Rule("alert",26965,"tcp","MALWARE-CNC Win.Trojan.Win32 Facebook Secure Cryptor C2"),Rule("alert",57067,"udp","SERVER-OTHER OpenBSD ISAKMP denial of service attempt")]
 # alerts = [Alert("21.05.2018 / 17:56:31","High","Server-MySQL","client overflow attempt"),Alert("21.05.2018 / 17:50:22","High","Server-MySQL","Bittorrent uTP peer request"),Alert("21.05.2018 / 16:42:11","Low","Server-MySQL","OpenSSL TLS change cipher spec protocol denial of service"),Alert("21.05.2018 / 14:54:02","High","Server-MySQL","ssh CRC32 overflow filter"),Alert("21.05.2018 / 10:05:53","Medium","Server-MySQL","Sipvicious User-Agent detected"),Alert("21.05.2018 / 08:44:09","High","Server-MySQL","Win.Trojan.Rombrast Trojan outbound connection")]
@@ -89,6 +105,41 @@ def index(request: Request, db:dbhelper.Session = Depends(get_db), page: int = 1
     return templates.TemplateResponse("pages/alerts.html",{"request": request,"name":"Alerts", "alerts": alerts, "last": last, "page": page})
 
 @app.get("/network",response_class=HTMLResponse)
-def index(request: Request):
-    return templates.TemplateResponse("pages/network.html",{"request": request,"name":"Network"})
+def index(request: Request, db:dbhelper.Session = Depends(get_db)):
+    ipStats = db.query(IPStatistics).filter(IPStatistics.type == "src").order_by(IPStatistics.count.desc()).all()
+    for i in range(0,len(ipStats)):
+        if(i == 8):
+            break
+        top_source_ips_key[i] = ipStats[i].ip
+        top_source_ips_value[i] = ipStats[i].count
+
+    ipStats = db.query(IPStatistics).filter(IPStatistics.type == "dst").order_by(IPStatistics.count.desc()).all()
+    for i in range(0,len(ipStats)):
+        if(i == 8):
+            break
+        top_destination_ips_key[i] = ipStats[i].ip
+        top_destination_ips_value[i] = ipStats[i].count
+
+    portStats = db.query(PortStatistics).filter(PortStatistics.type == "src").order_by(PortStatistics.count.desc()).all()
+    for i in range(0,len(portStats)):
+        if(i == 8):
+            break
+        top_source_ports_key[i] = portStats[i].port
+        top_source_ports_value[i] = portStats[i].count
+
+    portStats = db.query(PortStatistics).filter(PortStatistics.type == "dst").order_by(PortStatistics.count.desc()).all()
+    for i in range(0,len(portStats)):
+        if(i == 8):
+            break
+        top_destination_ports_key[i] = portStats[i].port
+        top_destination_ports_value[i] = portStats[i].count
+
+    protocolStats = db.query(ProtocolStatistics).order_by(ProtocolStatistics.count.desc()).all()
+    for i in range(0,len(protocolStats)):
+        if(i == 8):
+            break
+        top_protocols_key[i] = protocolStats[i].protocol
+        top_protocols_value[i] = protocolStats[i].count
+
+    return templates.TemplateResponse("pages/network.html",{"request": request,"name":"Network","c1_key":top_source_ips_key,"c1_value":top_source_ips_value,"c2_key":top_destination_ips_key,"c2_value":top_destination_ips_value,"c3_key":top_source_ports_key,"c3_value":top_source_ports_value,"c4_key":top_destination_ports_key,"c4_value":top_destination_ports_value,"c5_key":top_protocols_key,"c5_value":top_protocols_value})
     # return templates.TemplateResponse("pages/network.html",{"request": request,"name":"Network", "alerts": alerts})

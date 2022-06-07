@@ -15,7 +15,15 @@ class IPStatistics(Base):
     country = _sql.Column(_sql.String, index=True)
     type = _sql.Column(_sql.String, index=True)
     count = _sql.Column(_sql.Integer, index=True)
-    pass
+
+    def __init__(self,ip,country,type,count):
+        self.ip = ip
+        self.country = country
+        self.type = type
+        self.count = count
+
+    def to_tuple(self):
+        return (self.ip, self.country, self.type, self.count, self.ip, self.type)
 
 class PortStatistics(Base):
     __tablename__ = "port_statistics"
@@ -23,30 +31,61 @@ class PortStatistics(Base):
     port = _sql.Column(_sql.String, index=True)
     type = _sql.Column(_sql.String, index=True)
     count = _sql.Column(_sql.Integer, index=True)
-    pass
+    
+    def __init__(self,port,type,count):
+        self.port = port
+        self.type = type
+        self.count = count
+
+    def to_tuple(self):
+        return (self.port, self.type, self.count, self.port)
 
 class ProtocolStatistics(Base):
     __tablename__ = "protocol_statistics"
     id = _sql.Column(_sql.Integer, primary_key=True, index=True)
     protocol = _sql.Column(_sql.String, index=True)
     count = _sql.Column(_sql.Integer, index=True)
-    pass
+
+    def __init__(self,protocol,count):
+        self.protocol = protocol
+        self.count = count
+
+    def to_tuple(self):
+        return (self.protocol, self.count, self.protocol)
 
 class ClassTypeStatistics(Base):
     __tablename__ = "class_type_statistics"
     id = _sql.Column(_sql.Integer, primary_key=True, index=True)
     class_type = _sql.Column(_sql.String, index=True)
     count = _sql.Column(_sql.Integer, index=True)
-    pass
+    
+    def __init__(self,class_type,count):
+        self.class_type = class_type
+        self.count = count
+
+    def to_tuple(self):
+        return (self.class_type, self.count)
 
 class DashboardWeekdayStatistics(Base):
     __tablename__ = "dashboard_weekday_statistics"
     weekday = _sql.Column(_sql.Integer, primary_key=True, index=True)
     count = _sql.Column(_sql.Integer, index=True)
-    pass
+    
+    def __init__(self,weekday,count):
+        self.weekday = weekday
+        self.count = count
+
+    def to_tuple(self):
+        return (self.weekday, self.count)
 
 class DashboardRuleStatistics(Base):
     __tablename__ = "dashboard_rule_statistics"
     month_number = _sql.Column(_sql.Integer, primary_key=True, index=True)
     count = _sql.Column(_sql.Integer, index=True)
-    pass
+    
+    def __init__(self,month_number,count):
+        self.month_number = month_number
+        self.count = count
+
+    def to_tuple(self):
+        return (self.month_number, self.count)

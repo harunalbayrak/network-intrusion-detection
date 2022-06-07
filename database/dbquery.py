@@ -58,79 +58,84 @@ create_ip_statistics_table = """CREATE TABLE IP_STATISTICS(
                                 IP VARCHAR(30) NOT NULL,
                                 COUNTRY VARCHAR(50) NOT NULL,
                                 TYPE VARCHAR(10) NOT NULL,
-                                COUNT INT NOT NULL,
-                                """
+                                COUNT INT NOT NULL)"""
 
 insert_ip_statistics_table = """INSERT INTO IP_STATISTICS(
                                 IP, COUNTRY, TYPE, COUNT)
-                                VALUES (%s,%s,%s,%d)"""
+                                SELECT %s,%s,%s,%s WHERE NOT EXISTS (SELECT IP FROM IP_STATISTICS WHERE IP = %s and TYPE = %s)"""
 
 select_ip_statistics_table = "SELECT * FROM IP_STATISTICS"
+
+update_ip_statistics_table = """UPDATE IP_STATISTICS SET COUNT = %s WHERE IP = %s and TYPE = %s"""
 
 # PORT STATISTICS
 create_port_statistics_table = """CREATE TABLE PORT_STATISTICS(
                                 ID SERIAL PRIMARY KEY,
                                 PORT VARCHAR(30) NOT NULL,
                                 TYPE VARCHAR(10) NOT NULL,
-                                COUNT INT NOT NULL,
-                                """
+                                COUNT INT NOT NULL)"""
 
 insert_port_statistics_table = """INSERT INTO PORT_STATISTICS(
                                 PORT, TYPE, COUNT)
-                                VALUES (%s,%s,%d)"""
+                                SELECT %s,%s,%s WHERE NOT EXISTS (SELECT PORT FROM PORT_STATISTICS WHERE PORT = %s)"""
 
-select_port_statistics_table = "SELECT * FROM PORT_STATISTICS"                                
+select_port_statistics_table = "SELECT * FROM PORT_STATISTICS"     
+
+update_port_statistics_table = """UPDATE PORT_STATISTICS SET COUNT = %s WHERE PORT = %s and TYPE = %s"""
 
 # PROTOCOL STATISTICS
 create_protocol_statistics_table = """CREATE TABLE PROTOCOL_STATISTICS(
                                     ID SERIAL PRIMARY KEY,
                                     PROTOCOL VARCHAR(30) NOT NULL,
-                                    COUNT INT NOT NULL,
-                                    """
+                                    COUNT INT NOT NULL)"""
 
 insert_protocol_statistics_table = """INSERT INTO PROTOCOL_STATISTICS(
                                     PROTOCOL, COUNT)
-                                    VALUES (%s,%d)"""
+                                    SELECT %s,%s WHERE NOT EXISTS (SELECT PROTOCOL FROM PROTOCOL_STATISTICS WHERE PROTOCOL = %s)"""
 
 select_protocol_statistics_table = "SELECT * FROM PROTOCOL_STATISTICS"
+
+update_protocol_statistics_table = """UPDATE PROTOCOL_STATISTICS SET COUNT = %s WHERE PROTOCOL = %s"""
 
 # CLASS TYPE STATISTICS
 create_class_type_statistics_table = """CREATE TABLE CLASS_TYPE_STATISTICS(
                                     ID SERIAL PRIMARY KEY,
                                     CLASS_TYPE VARCHAR(80) NOT NULL,
-                                    COUNT INT NOT NULL,
-                                    """
+                                    COUNT INT NOT NULL)"""
 
 insert_class_type_statistics_table = """INSERT INTO CLASS_TYPE_STATISTICS(
                                         CLASS_TYPE, COUNT)
-                                        VALUES (%s,%d)"""
+                                        VALUES (%s,%s)"""
 
 select_class_type_statistics_table = "SELECT * FROM CLASS_TYPE_STATISTICS"
+
+update_class_type_statistics_table = """UPDATE CLASS_TYPE SET COUNT = %s WHERE CLASS_TYPE = %s"""
 
 # DASHBOARD_WEEKDAY_STATISTICS
 create_dashboard_weekday_statistics_table = """CREATE TABLE DASHBOARD_WEEKDAY_STATISTICS(
                                             WEEKDAY INT PRIMARY KEY,
-                                            COUNT INT NOT NULL,
-                                            """
+                                            COUNT INT NOT NULL)"""
 
 insert_dashboard_weekday_statistics_table = """INSERT INTO DASHBOARD_WEEKDAY_STATISTICS(
                                             WEEKDAY, COUNT)
-                                            VALUES (%d,%d)"""
+                                            VALUES (%s,%s)"""
 
 select_dashboard_weekday_statistics_table = "SELECT * FROM DASHBOARD_WEEKDAY_STATISTICS"
 
+update_dashboard_weekday_statistics_table = """UPDATE DASHBOARD_WEEKDAY_STATISTICS SET COUNT = %s WHERE WEEKDAY = %s"""
 
 # DASHBOARD_RULE_STATISTICS
 create_dashboard_rule_statistics_table = """CREATE TABLE DASHBOARD_RULE_STATISTICS(
                                             MONTH_NUMBER INT PRIMARY KEY,
-                                            COUNT INT NOT NULL,
-                                            """
+                                            COUNT INT NOT NULL)"""
 
 insert_dashboard_rule_statistics_table = """INSERT INTO DASHBOARD_RULE_STATISTICS(
                                             MONTH_NUMBER, COUNT)
-                                            VALUES (%d,%d)"""
+                                            VALUES (%s,%s)"""
 
 select_dashboard_rule_statistics_table = "SELECT * FROM DASHBOARD_RULE_STATISTICS"
+
+update_dashboard_rule_statistics_table = """UPDATE DASHBOARD_RULE_STATISTICS SET COUNT = %s WHERE MONTH_NUMBER = %s"""
 
 def get_create_query(i):
     match i:
@@ -138,6 +143,18 @@ def get_create_query(i):
             return create_rules_table
         case 1:
             return create_alerts_table
+        case 2:
+            return create_ip_statistics_table
+        case 3:
+            return create_port_statistics_table
+        case 4:
+            return create_protocol_statistics_table
+        case 5:
+            return create_class_type_statistics_table
+        case 6:
+            return create_dashboard_weekday_statistics_table
+        case 7:
+            return create_dashboard_rule_statistics_table
 
 def get_insert_query(i):
     match i:
@@ -145,6 +162,18 @@ def get_insert_query(i):
             return insert_rules_table
         case 1:
             return insert_alerts_table
+        case 2:
+            return insert_ip_statistics_table
+        case 3:
+            return insert_port_statistics_table
+        case 4:
+            return insert_protocol_statistics_table
+        case 5:
+            return insert_class_type_statistics_table
+        case 6:
+            return insert_dashboard_weekday_statistics_table
+        case 7:
+            return insert_dashboard_rule_statistics_table
 
 def get_select_query(i):
     match i:
@@ -152,3 +181,30 @@ def get_select_query(i):
             return select_rules_table
         case 1:
             return select_alerts_table
+        case 2:
+            return select_ip_statistics_table
+        case 3:
+            return select_port_statistics_table
+        case 4:
+            return select_protocol_statistics_table
+        case 5:
+            return select_class_type_statistics_table
+        case 6:
+            return select_dashboard_weekday_statistics_table
+        case 7:
+            return select_dashboard_rule_statistics_table
+
+def get_update_query(i):
+    match i:
+        case 2:
+            return update_ip_statistics_table
+        case 3:
+            return update_port_statistics_table
+        case 4:
+            return update_protocol_statistics_table
+        case 5:
+            return update_class_type_statistics_table
+        case 6:
+            return update_dashboard_weekday_statistics_table
+        case 7:
+            return update_dashboard_rule_statistics_table

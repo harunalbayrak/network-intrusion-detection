@@ -131,7 +131,7 @@
     new Chart(ctx5, {
         type: "bar",
         data: {
-        labels: ["192.168.1.1", "5.188.10.176", "5.188.10.144", "195.209.187.229", "178.46.96.158", "195.191.202.240", "122.226.181.166", "207.189.20.3"],
+        labels: ["{{c1_key[0]}}", "{{c1_key[1]}}", "{{c1_key[2]}}", "{{c1_key[3]}}", "{{c1_key[4]}}", "{{c1_key[5]}}", "{{c1_key[6]}}", "{{c1_key[7]}}"],
         datasets: [{
             label: "Occurrence",
             tension: 0.4,
@@ -139,7 +139,7 @@
             borderRadius: 4,
             borderSkipped: false,
             backgroundColor: "rgba(255, 255, 255, .8)",
-            data: [462, 320, 210, 202, 180, 163, 102, 83, 10],
+            data: ["{{c1_value[0]}}", "{{c1_value[1]}}", "{{c1_value[2]}}", "{{c1_value[3]}}", "{{c1_value[4]}}", "{{c1_value[5]}}", "{{c1_value[6]}}", "{{c1_value[7]}}"],
             maxBarThickness: 20
         }, ],
         },
@@ -210,7 +210,7 @@
     new Chart(ctx6, {
         type: "bar",
         data: {
-        labels: ["192.168.1.10", "111.67.195.41", "192.168.1.254", "85.93.20.86", "45.126.125.65", "85.93.20.38", "85.93.20.91", "85.93.20.92"],
+        labels: ["{{c2_key[0]}}", "{{c2_key[1]}}", "{{c2_key[2]}}", "{{c2_key[3]}}", "{{c2_key[4]}}", "{{c2_key[5]}}", "{{c2_key[6]}}", "{{c2_key[7]}}"],
         datasets: [{
             label: "Occurrence",
             tension: 0.4,
@@ -218,7 +218,7 @@
             borderRadius: 4,
             borderSkipped: false,
             backgroundColor: "rgba(255, 255, 255, .8)",
-            data: [250, 120, 89, 75, 64, 59, 48, 34, 27],
+            data: ["{{c2_value[0]}}", "{{c2_value[1]}}", "{{c2_value[2]}}", "{{c2_value[3]}}", "{{c2_value[4]}}", "{{c2_value[5]}}", "{{c2_value[6]}}", "{{c2_value[7]}}"],
             maxBarThickness: 20
         }, ],
         },
@@ -289,7 +289,7 @@
     new Chart(ctx7, {
         type: "bar",
         data: {
-        labels: ["3306", "2999", "16", "3212", "462", "412", "512", "335"],
+        labels: ["{{c3_key[0]}}", "{{c3_key[1]}}", "{{c3_key[2]}}", "{{c3_key[3]}}", "{{c3_key[4]}}", "{{c3_key[5]}}", "{{c3_key[6]}}", "{{c3_key[7]}}"],
         datasets: [{
             label: "Occurrence",
             tension: 0.4,
@@ -297,7 +297,7 @@
             borderRadius: 4,
             borderSkipped: false,
             backgroundColor: "rgba(255, 255, 255, .8)",
-            data: [462, 320, 210, 202, 180, 163, 102, 83, 10],
+            data: ["{{c3_value[0]}}", "{{c3_value[1]}}", "{{c3_value[2]}}", "{{c3_value[3]}}", "{{c3_value[4]}}", "{{c3_value[5]}}", "{{c3_value[6]}}", "{{c3_value[7]}}"],
             maxBarThickness: 15
         }, ],
         },
@@ -368,7 +368,7 @@
     new Chart(ctx8, {
         type: "bar",
         data: {
-        labels: ["1", "22", "80", "443", "99", "3217", "4421", "230"],
+        labels: ["{{c4_key[0]}}", "{{c4_key[1]}}", "{{c4_key[2]}}", "{{c4_key[3]}}", "{{c4_key[4]}}", "{{c4_key[5]}}", "{{c4_key[6]}}", "{{c4_key[7]}}"],
         datasets: [{
             label: "Occurrence",
             tension: 0.4,
@@ -376,7 +376,7 @@
             borderRadius: 4,
             borderSkipped: false,
             backgroundColor: "rgba(255, 255, 255, .8)",
-            data: [462, 320, 210, 202, 180, 163, 102, 83, 10],
+            data: ["{{c4_value[0]}}", "{{c4_value[1]}}", "{{c4_value[2]}}", "{{c4_value[3]}}", "{{c4_value[4]}}", "{{c4_value[5]}}", "{{c4_value[6]}}", "{{c4_value[7]}}"],
             maxBarThickness: 15
         }, ],
         },
@@ -447,7 +447,7 @@
     new Chart(ctx9, {
         type: "bar",
         data: {
-        labels: ["TCP", "UDP", "Ethernet", "ICMP", "DNS", "TLS"],
+        labels: ["{{c5_key[0]}}", "{{c5_key[1]}}", "{{c5_key[2]}}", "{{c5_key[3]}}", "{{c5_key[4]}}", "{{c5_key[5]}}", "{{c5_key[6]}}", "{{c5_key[7]}}"],
         datasets: [{
             label: "Occurrence",
             tension: 0.4,
@@ -455,7 +455,7 @@
             borderRadius: 4,
             borderSkipped: false,
             backgroundColor: "rgba(255, 255, 255, .8)",
-            data: [462, 320, 210, 202, 180, 163, 102],
+            data: ["{{c5_value[0]}}", "{{c5_value[1]}}", "{{c5_value[2]}}", "{{c5_value[3]}}", "{{c5_value[4]}}", "{{c5_value[5]}}", "{{c5_value[6]}}", "{{c5_value[7]}}"],
             maxBarThickness: 15
         }, ],
         },

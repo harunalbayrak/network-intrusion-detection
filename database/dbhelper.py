@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from logger.logger import Logger
 import database.dbquery as dbquery
 
-tables = {"rules":0, "alerts":1}
+tables = {"rules":0, "alerts":1, "ip_statistics":2, "port_statistics":3, "protocol_statistics":4, "class_type_statistics":5, "dashboard_weekday_statistics":6, "dashboard_rule_statistics":7}
 
 class DBHelper:
     def __init__(self):
@@ -30,8 +30,7 @@ class DBHelper:
             print(error)
 
     def init_empty_tables(self):
-        self.create_rules_table()
-        self.create_alerts_table()
+        self.create_tables()
 
     def execute_sql(self, sql):
         try:
@@ -47,7 +46,8 @@ class DBHelper:
         self.cursor.execute(f"DROP TABLE IF EXISTS {table}")
 
     def create_tables(self):
-        for val in tables.values:
+        for key, val in tables.items():
+            self.drop_table(key)
             sql = dbquery.get_create_query(val)
             self.execute_sql(sql)
 
@@ -69,6 +69,10 @@ class DBHelper:
         self.cursor.execute(dbquery.get_insert_query(tables["alerts"]),alert.to_tuple())
         self.conn.commit()
 
+    def insert_statistics(self, num, statistics):
+        self.cursor.execute(dbquery.get_insert_query(num),statistics.to_tuple())
+        self.conn.commit()
+
     def select_rules(self):
         self.cursor.execute(dbquery.get_select_query(tables["rules"]))
         records = self.cursor.fetchall()
@@ -88,6 +92,17 @@ class DBHelper:
         self.cursor.execute(dbquery.select_rules_table_only_src_dest)
         records = self.cursor.fetchall()
         return records
+
+    def select_statistics(self, num):
+        self.cursor.execute(dbquery.get_select_query(num))
+        records = self.cursor.fetchall()
+        return records
+
+    def update_statistics(self, num, statistics):
+        self.cursor.execute(dbquery.get_update_query(num),statistics)
+        self.conn.commit()
+        count = self.cursor.rowcount
+        return count
 
     def __del__(self):
         # Closing the connection

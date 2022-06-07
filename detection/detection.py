@@ -8,6 +8,7 @@ import scapy.all as scapy
 from scapy.layers.http import *
 from detection_rules import DetectionRules
 from detection_alert import DetectionAlert
+from detection_statistics import DetectionStatistics
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from database.dbhelper import DBHelper
@@ -24,6 +25,7 @@ class Detection():
         self.setRulesFromDB()
         self.detectionRules = DetectionRules(self.src_dst)
         self.detectionAlert = DetectionAlert()
+        self.detectionStatistics = DetectionStatistics()
 
     def getRulesFromDB(self,q):
         dbHelper = DBHelper()
@@ -79,12 +81,14 @@ class Detection():
         udp_data = q['udp_data']
         _protocol = self.selectProtocol(protocol)
 
-        request_url = 'https://geolocation-db.com/jsonp/' + ip_src
-        response = requests.get(request_url)
-        result = response.content.decode()
-        result = result.split("(")[1].strip(")")
-        result  = json.loads(result)
-        print(result)
+        # request_url = 'https://geolocation-db.com/jsonp/' + ip_src
+        # response = requests.get(request_url)
+        # result = response.content.decode()
+        # result = result.split("(")[1].strip(")")
+        # result  = json.loads(result)
+        # print(result)
+
+        self.detectionStatistics.addStatistics(ip_src,ip_dst,port_src,port_dst,protocol)
 
         for i in range(len(self.contents)):
             _contentsList = str(self.contents[i][0]).split(" ")
