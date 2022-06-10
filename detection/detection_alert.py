@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.alert import Alert
 from models.statistics import DashboardWeekdayStatistics
 from database.dbhelper import DBHelper
+from logger.logger import Logger
 
 class DetectionAlert:
     def __init__(self):
@@ -14,6 +15,7 @@ class DetectionAlert:
         self.alerts = []
         self.time_limit = 120.0
         self.priority_time_limit = 180.0
+        self.logger = Logger("DETECTION")
         pass
     
     def checkIsAddable(self,alert2):
@@ -38,7 +40,7 @@ class DetectionAlert:
                     return -1
         return 0
 
-    def createAlert(self,rule,ip_src,ip_dst,port_src,port_dst):
+    def createAlert(self,rule,ip_src,ip_dst,port_src,port_dst,i):
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
         current_day = date.today()
@@ -59,11 +61,10 @@ class DetectionAlert:
             alert.priority = _priority
             self.alerts.append(_alert)
             self.insert_alert_db(alert)
-            print(alert)
+            self.logger.print_log_warning(f"Alert! Rule Number: {i} - {alert.class_type} - {alert.message} - {alert.protocol} - {alert.source_ip}:{alert.source_port} -> {alert.destination_ip}:{alert.destination_port}")
             
             weekday = datetime.today().weekday()
             record = self.dbHelper.select_weekday(weekday)
-            print(record[0])
 
             stat = DashboardWeekdayStatistics(weekday,str(record[0]+1))
             self.dbHelper.update_statistics(6,stat.to_tuple2())

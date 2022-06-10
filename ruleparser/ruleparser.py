@@ -9,12 +9,13 @@ from database.dbhelper import DBHelper
 from logger.logger import Logger
 
 class RuleParser:
-    def __init__(self,filename,ignore_comments):
+    def __init__(self,filename):
         self.filename = filename
-        self.ignore_comments = ignore_comments
         self.total_rules = 0
         self.logger = Logger("RULEPARSER")
+        self.logger.print_log_info("Signature rules are being parsed...")
         self.parse_file()
+        self.logger.print_log_info("Signature rules are parsed!")
 
     def __repr__(self):
         max = 5
@@ -70,6 +71,10 @@ class RuleParser:
         header_strings = rule.header.split()
         sid = rule.sid
         action = rule.action
+        try:
+            print(rule.pcre)
+        except:
+            pass
         protocol = header_strings[0]
         source_ip = header_strings[1]
         source_port = header_strings[2]
@@ -96,19 +101,19 @@ class RuleParser:
         return rule
 
     def insert_all_rules_db(self):
+        self.logger.print_log_info("Signature rules are being added to the database...")
         dbHelper = DBHelper()
         max = 100000
-        print(len(self.rules))
         for i in range(len(self.rules)):
             if i == max:
                 break
             rule_object = self.get_rule_object(i)
             # print(self.get_rule(i))
             dbHelper.insert_rule(rule_object)
+        self.logger.print_log_info(f"{len(self.rules)} signature rules are added to the database!")
 
 if __name__ == "__main__":
-    parser = RuleParser("rules/deneme.rules",True)
-    print(parser)
-
+    parser = RuleParser("rules/deneme.rules")
+    # print(parser)
     # parser.logger.print_log_info("Heyyyy")
     parser.insert_all_rules_db()

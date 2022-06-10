@@ -15,18 +15,31 @@ class bcolors:
 class Logger:
     def __init__(self, module):
         self.module = module
+        self.debug = 0
         
     def print_log_debug(self, log):
-        self.print_log(log,"DEBUG", Fore.GREEN)
+        if(self.debug == 1):
+            self.print_log(log,"DEBUG", Fore.GREEN)
+        else:
+            self.write_log_to_file(log,"DEBUG")
 
     def print_log_info(self, log):
-        self.print_log(log,"INFO", Fore.CYAN)
+        if(self.debug == 1):
+            self.print_log(log,"INFO", Fore.CYAN)
+        else:
+            self.write_log_to_file(log,"INFO")
 
     def print_log_warning(self, log):
-        self.print_log(log,"WARNING", Fore.YELLOW)
+        if(self.debug == 1):
+            self.print_log(log,"WARNING", Fore.YELLOW)
+        else:
+            self.write_log_to_file(log,"WARNING")
 
     def print_log_error(self, log):
-        self.print_log(log,"ERROR", Fore.LIGHTRED_EX)
+        if(self.debug == 1):
+            self.print_log(log,"ERROR", Fore.LIGHTRED_EX)
+        else:
+            self.write_log_to_file(log,"ERROR")
 
     def print_log(self, log, status, color):
         now = datetime.now()
@@ -44,3 +57,24 @@ class Logger:
             print(f"[RULEPARSER Module - {color}{status}{Style.RESET_ALL} - {currentTime}] {log}")
         else:
             print(f"[UNKNOWN Module - {color}{status}{Style.RESET_ALL} - {currentTime}] {log}")
+
+    def write_log_to_file(self, log, status):
+        self.logfile = open("logs.txt", "a")
+        
+        now = datetime.now()
+        currentTime = now.strftime("%H:%M:%S")
+
+        if self.module == 'DATABASE':
+            self.logfile.write(f"[DATABASE Module - {status} - {currentTime}] {log}\n")
+        elif self.module == 'DETECTION':
+            self.logfile.write(f"[DETECTION Module - {status} - {currentTime}] {log}\n")
+        elif self.module == 'GUI':
+            self.logfile.write(f"[GUI Module - {status} - {currentTime}] {log}\n")
+        elif self.module == 'PACKETCAPTURE':
+            self.logfile.write(f"[PACKETCAPTURE Module - {status} - {currentTime}] {log}\n")
+        elif self.module == 'RULEPARSER':
+            self.logfile.write(f"[RULEPARSER Module - {status} - {currentTime}] {log}\n")
+        else:
+            self.logfile.write(f"[UNKNOWN Module - {status} - {currentTime}] {log}\n")
+
+        self.logfile.close()

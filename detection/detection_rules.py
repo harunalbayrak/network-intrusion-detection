@@ -1,8 +1,14 @@
+import os
+import sys
 import re
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from logger.logger import Logger
 
 class DetectionRules:
     def __init__(self,src_dst):
         self.src_dst = src_dst
+        self.logger = Logger("DETECTION")
 
     def checkSourceIP(self,i,ip_src):
         if(self.src_dst[i][0] == "$HOME_NET"): # src ip
@@ -78,8 +84,6 @@ class DetectionRules:
         res = self.checkSourceIP(i,ip_src)
         if(res == -1):
             return -1
-        elif(res == 0):
-            return 0
 
         res = self.checkDestinationIP(i,ip_dst)
         if(res == -1):
@@ -92,6 +96,8 @@ class DetectionRules:
         res = self.checkDestinationPort(i,port_src)
         if(res == -1):
             return -1
+
+        return 0
 
     def checkContent(self,i,data,_contentsList,protocol,tcp_data,udp_data):
         flag = 0
@@ -132,11 +138,13 @@ class DetectionRules:
                 return 0
 
     def checkAll(self,i,content,data,_contentsList,protocol,tcp_data,udp_data,ip_src,ip_dst,port_src,port_dst):
+        flag = 0
         res = self.checkIPandPort(i,ip_src,ip_dst,port_src,port_dst)
         if(res == -1):
             return -1
-        elif(res == 0):
-            return 0
+        # elif(res == 0):
+            self.logger(f"Satisfied IP and PORT of the Packet")
+            # return 0
 
         if(len(content[0]) == 0):
             return -1
@@ -145,4 +153,5 @@ class DetectionRules:
         if(res == -1):
             return -1
         elif(res == 0):
+            print(_contentsList)
             return 0

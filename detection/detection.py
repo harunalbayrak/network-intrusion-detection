@@ -3,18 +3,16 @@ import sys
 import requests
 import json
 
-from layercapture import LayerCapture
 import scapy.all as scapy
 from scapy.layers.http import *
-from detection_rules import DetectionRules
-from detection_alert import DetectionAlert
-from detection_statistics import DetectionStatistics
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from database.dbhelper import DBHelper
 from logger.logger import Logger
-from packetcapture.packetcapture import PacketCapture
-from models.alert import Alert
+from packetcapture.layercapture import LayerCapture
+from detection.detection_rules import DetectionRules
+from detection.detection_alert import DetectionAlert
+from detection.detection_statistics import DetectionStatistics
 
 queries = {"all":0, "contents":1, "protocol":2, "src_dest":3}
 
@@ -69,7 +67,6 @@ class Detection():
                 return "udp"
 
     def compareContents(self):
-        self.logger.print_log_info("Queue Processing...")
         q = self.layercapture.removeContentFromQueue()
         data = q['data']
         ip_src = q['ip_src']
@@ -80,6 +77,8 @@ class Detection():
         tcp_data = q['tcp_data']
         udp_data = q['udp_data']
         _protocol = self.selectProtocol(protocol)
+
+        self.logger.print_log_info(f"Packet Data are removed from the Queue -> {_protocol}, {ip_src}:{port_src} -> {ip_dst}:{port_dst}")
 
         # request_url = 'https://geolocation-db.com/jsonp/' + ip_src
         # response = requests.get(request_url)
@@ -97,12 +96,12 @@ class Detection():
             
             res = self.detectionRules.checkAll(i,self.contents[i],data,_contentsList,protocol,tcp_data,udp_data,ip_src,ip_dst,port_src,port_dst)
             if(res == 0):
-                self.detectionAlert.createAlert(self.all_rules[i],ip_src,ip_dst,port_src,port_dst)
+                self.detectionAlert.createAlert(self.all_rules[i],ip_src,ip_dst,port_src,port_dst,i)
 
 
     def analyse_packet(self,pkt):
         if(pkt.haslayer(scapy.Ether)):
-            self.logger.print_log_info("Ether")
+            # self.logger.print_log_info("Ether")
             self.layercapture.capture_ether(pkt["Ether"])
         # if(pkt.haslayer(scapy.UDP)):
         #     self.logger.print_log_info("UDP")

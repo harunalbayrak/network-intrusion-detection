@@ -35,11 +35,20 @@ class DBHelper:
     def execute_sql(self, sql):
         try:
             self.cursor.execute(sql)
-            print("SQL command executed successfully.")
             self.conn.commit()
-
         except (Exception, psycopg2.DatabaseError) as error:
-            print(error)
+            self.logger.print_log_error(f"{error}")
+        finally:
+            self.logger.print_log_info(f"{sql} command executed successfully.")
+
+    def execute_sql2(self, sql, args):
+        try:
+            self.cursor.execute(sql, args)
+            self.conn.commit()
+        except (Exception, psycopg2.DatabaseError) as error:
+            self.logger.print_log_error(f"{error}")
+        # finally:
+            # self.logger.print_log_info(f"{sql} command executed successfully.")
 
     def drop_table(self,table):
         # Doping EMPLOYEE table if already exists.
@@ -62,16 +71,13 @@ class DBHelper:
         self.execute_sql(sql)
 
     def insert_rule(self, rule):
-        self.cursor.execute(dbquery.get_insert_query(tables["rules"]),rule.to_tuple())
-        self.conn.commit()
-
+        self.execute_sql2(dbquery.get_insert_query(tables["rules"]),rule.to_tuple())
+        
     def insert_alert(self, alert):
-        self.cursor.execute(dbquery.get_insert_query(tables["alerts"]),alert.to_tuple())
-        self.conn.commit()
+        self.execute_sql2(dbquery.get_insert_query(tables["alerts"]),alert.to_tuple())
 
     def insert_statistics(self, num, statistics):
-        self.cursor.execute(dbquery.get_insert_query(num),statistics.to_tuple())
-        self.conn.commit()
+        self.execute_sql2(dbquery.get_insert_query(num),statistics.to_tuple())
 
     def select_rules(self):
         self.cursor.execute(dbquery.get_select_query(tables["rules"]))
@@ -104,8 +110,7 @@ class DBHelper:
         return record
 
     def update_statistics(self, num, statistics):
-        self.cursor.execute(dbquery.get_update_query(num),statistics)
-        self.conn.commit()
+        self.execute_sql2(dbquery.get_update_query(num),statistics)
 
     def __del__(self):
         # Closing the connection
