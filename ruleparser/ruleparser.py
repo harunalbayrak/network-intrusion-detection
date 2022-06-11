@@ -9,7 +9,6 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.rule import Rule
 from database.dbhelper import DBHelper
 from logger.logger import Logger
-from snortparser.snortparser import Parser
 
 class RuleParser:
     def __init__(self,filename):
