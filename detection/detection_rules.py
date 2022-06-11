@@ -1,7 +1,6 @@
 import os
 import sys
 import re
-
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from logger.logger import Logger
 
@@ -84,6 +83,8 @@ class DetectionRules:
         res = self.checkSourceIP(i,ip_src)
         if(res == -1):
             return -1
+        elif(res == 0):
+            return 0
 
         res = self.checkDestinationIP(i,ip_dst)
         if(res == -1):
@@ -97,7 +98,17 @@ class DetectionRules:
         if(res == -1):
             return -1
 
-        return 0
+    def checkRegex(self,pattern,data,i):
+        # datax = "LogFileClearLogFileSaveToFile"
+        # print(patternx)
+        # if pattern == "(LogFile|ClearLogFile|SaveToFile)":
+        #     print(pattern)
+
+        # print(r"%s" % pattern + " - %s" % i)
+        x = re.findall(r"%s" % pattern,data)
+        if len(x) > 0:
+            return 0
+        return -1
 
     def checkContent(self,i,data,_contentsList,protocol,tcp_data,udp_data):
         flag = 0
@@ -137,21 +148,28 @@ class DetectionRules:
             elif(flag != 1):
                 return 0
 
-    def checkAll(self,i,content,data,_contentsList,protocol,tcp_data,udp_data,ip_src,ip_dst,port_src,port_dst):
-        flag = 0
+    def checkAll(self,i,content,data,_contentsList,protocol,tcp_data,udp_data,ip_src,ip_dst,port_src,port_dst,pcre):
         res = self.checkIPandPort(i,ip_src,ip_dst,port_src,port_dst)
         if(res == -1):
             return -1
-        # elif(res == 0):
-            self.logger(f"Satisfied IP and PORT of the Packet")
-            # return 0
+        elif(res == 0):
+            # self.logger(f"Satisfied IP and PORT of the Packet")
+            return 0
 
-        if(len(content[0]) == 0):
-            return -1
+        # if(len(content[0]) == 0):
+        #     return -1
 
         res = self.checkContent(i,data,_contentsList,protocol,tcp_data,udp_data)
         if(res == -1):
             return -1
         elif(res == 0):
-            print(_contentsList)
+            # print(_contentsList)
             return 0
+
+        if(pcre[0] != ''):
+            res = self.checkRegex(pcre[0],data,i)
+            if(res == -1):
+                return -1
+            elif(res == 0):
+                # print(f"REGEX MATCH! : {pcre[0]} - {data}")
+                return 0

@@ -99,6 +99,11 @@ class DBHelper:
         records = self.cursor.fetchall()
         return records
 
+    def select_rules_only_pcre(self):
+        self.cursor.execute(dbquery.select_rules_table_only_pcre)
+        records = self.cursor.fetchall()
+        return records
+
     def select_statistics(self, num):
         self.cursor.execute(dbquery.get_select_query(num))
         records = self.cursor.fetchall()

@@ -36,6 +36,8 @@ class Detection():
             records = dbHelper.select_rules_only_protocol()
         elif(q == 3):
             records = dbHelper.select_rules_only_src_dst()
+        elif(q == 4):
+            records = dbHelper.select_rules_only_pcre()
 
         # i=0
         # for row in records:
@@ -50,6 +52,7 @@ class Detection():
         self.contents = self.getRulesFromDB(1)
         self.protocol = self.getRulesFromDB(2)
         self.src_dst = self.getRulesFromDB(3)
+        self.pcre = self.getRulesFromDB(4)
 
     def isBlank(self,myString):
         return not (myString and myString.strip())
@@ -94,7 +97,7 @@ class Detection():
             if(self.protocol[i][0] != _protocol):
                 continue
             
-            res = self.detectionRules.checkAll(i,self.contents[i],data,_contentsList,protocol,tcp_data,udp_data,ip_src,ip_dst,port_src,port_dst)
+            res = self.detectionRules.checkAll(i,self.contents[i],data,_contentsList,protocol,tcp_data,udp_data,ip_src,ip_dst,port_src,port_dst,self.pcre[i])
             if(res == 0):
                 self.detectionAlert.createAlert(self.all_rules[i],ip_src,ip_dst,port_src,port_dst,i)
 

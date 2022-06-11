@@ -66,13 +66,16 @@ class DetectionAlert:
             weekday = datetime.today().weekday()
             record = self.dbHelper.select_weekday(weekday)
 
-            stat = DashboardWeekdayStatistics(weekday,str(record[0]+1))
-            self.dbHelper.update_statistics(6,stat.to_tuple2())
-
+            if(record == None):
+                stat = DashboardWeekdayStatistics(weekday,str(1))
+                self.dbHelper.insert_statistics(6,stat)
+            else:
+                stat = DashboardWeekdayStatistics(weekday,record[0]+1)
+                self.dbHelper.update_statistics(6,stat.to_tuple2())
             # try:
                 # self.dbHelper.insert_statistics(6,stat)
             # except:
-                # self.dbHelper.update_statistics(6,stat.to_tuple2())
+            #     self.dbHelper.update_statistics(6,stat.to_tuple2())
             
     def insert_alert_db(self,alert):
         self.dbHelper.insert_alert(alert)

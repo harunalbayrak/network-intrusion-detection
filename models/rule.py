@@ -21,9 +21,10 @@ class Rule(Base):
     message = _sql.Column(_sql.String, index=True)
     contents = _sql.Column(_sql.String, index=True)
     class_type = _sql.Column(_sql.String, index=True)
+    pcre = _sql.Column(_sql.String, index=True)
     _metadata = _sql.Column("metadata", _sql.String)
 
-    def __init__(self,action,sid,protocol,source_ip,source_port,destination_ip,destination_port,message,contents,class_type,metadata):
+    def __init__(self,action,sid,protocol,source_ip,source_port,destination_ip,destination_port,message,contents,class_type,pcre,metadata):
         self.action = action
         self.sid = sid
         self.protocol = protocol
@@ -34,8 +35,9 @@ class Rule(Base):
         self.message = message
         self.contents = ' '.join(map(str, contents))
         self.class_type = class_type
+        self.pcre = pcre
         self.metadata = metadata
 
     def to_tuple(self):
         return (self.action, str(self.sid), self.protocol, self.source_ip, self.source_port,
-            self.destination_ip, self.destination_port, self.message, self.contents, self.class_type, self.metadata)
+            self.destination_ip, self.destination_port, self.message, self.contents, self.class_type, self.pcre, self.metadata)

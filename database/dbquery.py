@@ -13,18 +13,21 @@ create_rules_table = """CREATE TABLE RULES(
                         MESSAGE VARCHAR(255),
                         CONTENTS VARCHAR(2000),
                         CLASS_TYPE VARCHAR(80),
+                        PCRE VARCHAR(500),
                         METADATA VARCHAR(500))"""
 
 insert_rules_table = """INSERT INTO RULES(
                         ACTION, SID, PROTOCOL, SOURCE_IP, SOURCE_PORT,
-                        DESTINATION_IP, DESTINATION_PORT, MESSAGE, CONTENTS, CLASS_TYPE, METADATA)
-                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+                        DESTINATION_IP, DESTINATION_PORT, MESSAGE, CONTENTS, CLASS_TYPE, PCRE, METADATA)
+                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
 
 select_rules_table = "SELECT * FROM RULES"
 
 select_rules_table_only_contents = "SELECT contents FROM RULES"
 
 select_rules_table_only_protocol = "SELECT protocol FROM RULES"
+
+select_rules_table_only_pcre = "SELECT pcre FROM RULES"
 
 select_rules_table_only_src_dest = "SELECT source_ip, source_port, destination_ip, destination_port FROM RULES"
 
